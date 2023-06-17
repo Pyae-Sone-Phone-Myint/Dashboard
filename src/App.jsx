@@ -1,10 +1,12 @@
 import React from "react";
 import Path from "./routes/Path";
+import Sales from "./components/Sales/Sales";
 
 const App = () => {
   return (
     <>
-      <Path />    
+      <Sales />
+      {/* <Path />     */}
     </>
   );
 };
