@@ -1,12 +1,12 @@
-import React from 'react'
-import Path from './routes/Path'
+import React from "react";
+import Path from "./routes/Path";
 
 const App = () => {
   return (
     <>
-      <Path/>
+      <Path />    
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;

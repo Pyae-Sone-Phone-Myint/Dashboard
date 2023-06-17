@@ -10,12 +10,12 @@ const Monitor = () => {
       <div className="page-header">
         <h1 className=" header ">Default Dashboard</h1>
       </div>
-      <div className="card-row flex flex-wrap">
+      <div className="monitor-card-row flex flex-wrap">
         {monitorData.map((data) => {
           return (
-            <div className="card-item" key={data.id}>
-              <div className="card h-full">
-                <div className="card-body">
+            <div className="monitor-card-item" key={data.id}>
+              <div className="monitor-card h-full">
+                <div className="monitor-card-body">
                   <div className="flex justify-between items-center">
                     <div className="">
                     <h4 className={`text-number mb-2 ${data.id === 1 ? 'text-[#dc3545]' : data.id === 2 ? 'text-[#0d6efd]' : data.id === 3 ? 'text-[#4650dd]' : data.id === 4 ? 'text-[#35b653]' : ''}`}>{data.number}</h4>
@@ -30,7 +30,7 @@ const Monitor = () => {
                     </div>
                   </div>
                 </div>
-                <div className={`card-footer py-4 px-8   ${data.id === 1 ? 'bg-[#f8d7da]' : data.id === 2 ? 'bg-[#cfe2ff]' : data.id === 3 ? 'bg-[#dadcf8]' : data.id === 4 ? 'bg-[#d7f0dd]' : ''} `}>
+                <div className={`monitor-card-footer py-4 px-8   ${data.id === 1 ? 'bg-[#f8d7da]' : data.id === 2 ? 'bg-[#cfe2ff]' : data.id === 3 ? 'bg-[#dadcf8]' : data.id === 4 ? 'bg-[#d7f0dd]' : ''} `}>
                   <div className="flex items-center justify-between ">
                     <p className={`text-sm  font-[600]  ${data.id === 1 ? 'text-[#dc3545]' : data.id === 2 ? 'text-[#0d6efd]' : data.id === 3 ? 'text-[#4650dd]' : data.id === 4 ? 'text-[#35b653]' : ''}`}>
                       {data.footer} 
