@@ -11,7 +11,7 @@ const Contact = () => {
           <span className=" text-[#4650dd] hover:underline duration-150">
             Home
           </span>{" "}
-          / <span>Contact</span>{" "}
+          <span className=" page"> / Contact</span>{" "}
         </p>
       </div>
       <div className=" mb-12">
