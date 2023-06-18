@@ -1,0 +1,128 @@
+[
+  {
+    "id": 1,
+    "plan": "FREE",
+    "price": 0,
+    "features": [
+      {
+        "id": 1,
+        "feature": "Single User",
+        "status": true
+      },
+      {
+        "id": 2,
+        "feature": "5BG Storage",
+        "status": true
+      },
+      {
+        "id": 3,
+        "feature": "Unlimited Public Projects",
+        "status": true
+      },
+      {
+        "id": 4,
+        "feature": "Community Access",
+        "status": false
+      },
+      {
+        "id": 5,
+        "feature": "Unlimited Private Projects",
+        "status": false
+      },
+      {
+        "id": 6,
+        "feature": "Dedicated Phone Support",
+        "status": false
+      },
+      {
+        "id": 7,
+        "feature": "Monthly Status Report",
+        "status": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "plan": "PLUS",
+    "price": 9,
+    "features": [
+      {
+        "id": 1,
+        "feature": "Single User",
+        "status": true
+      },
+      {
+        "id": 2,
+        "feature": "5BG Storage",
+        "status": true
+      },
+      {
+        "id": 3,
+        "feature": "Unlimited Public Projects",
+        "status": true
+      },
+      {
+        "id": 4,
+        "feature": "Community Access",
+        "status": true
+      },
+      {
+        "id": 5,
+        "feature": "Unlimited Private Projects",
+        "status": true
+      },
+      {
+        "id": 6,
+        "feature": "Dedicated Phone Support",
+        "status": false
+      },
+      {
+        "id": 7,
+        "feature": "Monthly Status Report",
+        "status": false
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "plan": "PRO",
+    "price": 30,
+    "features": [
+      {
+        "id": 1,
+        "feature": "Single User",
+        "status": true
+      },
+      {
+        "id": 2,
+        "feature": "5BG Storage",
+        "status": true
+      },
+      {
+        "id": 3,
+        "feature": "Unlimited Public Projects",
+        "status": true
+      },
+      {
+        "id": 4,
+        "feature": "Community Access",
+        "status": true
+      },
+      {
+        "id": 5,
+        "feature": "Unlimited Private Projects",
+        "status": true
+      },
+      {
+        "id": 6,
+        "feature": "Dedicated Phone Support",
+        "status": true
+      },
+      {
+        "id": 7,
+        "feature": "Monthly Status Report",
+        "status": true
+      }
+    ]
+  }
+]
