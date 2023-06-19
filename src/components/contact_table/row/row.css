@@ -1,0 +1,9 @@
+.parents:hover .child .progress{
+    background-color: white;
+}
+.row_dropdown{
+    display: none;
+}
+.row_btn:focus+.row_dropdown{
+    display: block;
+}
