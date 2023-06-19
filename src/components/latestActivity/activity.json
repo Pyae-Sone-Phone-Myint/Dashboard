@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "img": "https://d19m59y37dris4.cloudfront.net/bubbly/1-3-2/img/avatar-0.jpg",
+    "name": "Nielsen Cobb",
+    "company": "MEMORA",
+    "email": "nielsencobb@memora.com",
+    "phone": "+1 (851) 552-2735",
+    "text": "subscribed to your newsletter.",
+    "time": 3
+  },
+  {
+    "id": 2,
+    "img": "https://d19m59y37dris4.cloudfront.net/bubbly/1-3-2/img/avatar-1.jpg",
+    "name": "Margret Cote",
+    "company": "ZILDILUM",
+    "email": " margretcote@zilidium.com",
+    "phone": "+1 (893) 532-2218",
+    "text": " liked your post 🎉 ",
+    "time": 4
+  },
+  {
+    "id": 3,
+    "img": "https://d19m59y37dris4.cloudfront.net/bubbly/1-3-2/img/avatar-2.jpg",
+    "name": "Rachel Vinson",
+    "company": "CHORIZON",
+    "email": " rachelvinson@chorizon.com",
+    "phone": "+1 (891) 494-2030",
+    "text": " placed an order.",
+    "time": 5
+  },
+  {
+    "id": 4,
+    "img": "https://d19m59y37dris4.cloudfront.net/bubbly/1-3-2/img/avatar-3.jpg",
+    "name": "Gabrielle Aguirre",
+    "company": "COMVERGES",
+    "email": " gabrielleaguirre@comverges.com",
+    "phone": "+1 (805) 496-8563",
+    "text": "commented on 'How to season your new grill.'",
+    "time": 6
+  },
+  {
+    "id": 5,
+    "img": "https://d19m59y37dris4.cloudfront.net/bubbly/1-3-2/img/avatar-4.jpg",
+    "name": "Spears Collier",
+    "company": "REMOLD",
+    "email": " spearscollier@remold.com",
+    "phone": "+1 (910) 555-2243",
+    "text": "subscribed to your newsletter.",
+    "time": 7
+  },
+  {
+    "id": 6,
+    "img": "https://d19m59y37dris4.cloudfront.net/bubbly/1-3-2/img/avatar-5.jpg",
+    "name": "Keisha Thomas",
+    "company": "EURON",
+    "email": " keisha@euron.com",
+    "phone": "+1 (958) 405-3392",
+    "text": " liked your post 🎉 ",
+    "time": 8
+  },
+  {
+    "id": 7,
+    "img": "https://d19m59y37dris4.cloudfront.net/bubbly/1-3-2/img/avatar-6.jpg",
+    "name": "Elisabeth Key",
+    "company": "NETAGY",
+    "email": " elisabeth@netagy.com",
+    "phone": "+1 (900) 142-2085",
+    "text": " placed an order.",
+    "time": 9
+  },
+  {
+    "id": 8,
+    "img": "https://d19m59y37dris4.cloudfront.net/bubbly/1-3-2/img/avatar-7.jpg",
+    "name": "Patel Mack",
+    "company": "ZEDALIS",
+    "email": " patelmack@xedalis.com",
+    "phone": "+1 (800) 406-2470",
+    "text": "commented on 'How to season your new grill.'",
+    "time": 10
+  },
+  {
+    "id": 9,
+    "img": "https://d19m59y37dris4.cloudfront.net/bubbly/1-3-2/img/avatar-8.jpg",
+    "name": "Erika Whitaker",
+    "company": "UNIWORLD",
+    "email": " erikawhitaker@uniworld.com",
+    "phone": "+1 (911) 484-8888",
+    "text": "subscribed to your newsletter.",
+    "time": 11
+  },
+  {
+    "id": 10,
+    "img": "https://d19m59y37dris4.cloudfront.net/bubbly/1-3-2/img/avatar-9.jpg",
+    "name": "Meyers Swanson",
+    "company": "CANDECOR",
+    "email": " meyersswanson@candecor.com",
+    "phone": "+1 (999) 404-3297",
+    "text": " liked your post 🎉",
+    "time": 12
+  },
+  {
+    "id": 11,
+    "img": "https://d19m59y37dris4.cloudfront.net/bubbly/1-3-2/img/avatar-10.jpg",
+    "name": "Townsend Sloan",
+    "company": "RAMEON",
+    "email": " townsendsloan@rameon.com",
+    "phone": "+1 (978) 865-5863",
+    "text": " placed an order.",
+    "time": 13
+  },
+  {
+    "id": 12,
+    "img": "https://d19m59y37dris4.cloudfront.net/bubbly/1-3-2/img/avatar-11.jpg",
+    "name": "Millicent Henry",
+    "company": "BALOOBA",
+    "email": " millicenthenry@balooba.com",
+    "phone": "+1 (863) 532-7588",
+    "text": "commented on 'How to season your new grill.'",
+    "time": 14
+  }
+]
