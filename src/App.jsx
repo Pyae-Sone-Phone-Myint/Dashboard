@@ -4,7 +4,8 @@ import Invoice from "./pages/invoice/Invoice";
 const App = () => {
   return (
     <>
-      <Path />
+      <Invoice />
+      {/* <Path /> */}
     </>
   );
 };
