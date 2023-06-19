@@ -14,14 +14,14 @@ import { Route, Routes } from "react-router-dom";
 import Monitor from "../monitor/Monitor";
 
 const Navbar = () => {
-  const [sidebar, setSidebar] = useState(false);
+  const [sidebar, setSidebar] = useState(true);
   return (
     <>
       {/* Navbar */}
-      <div className="container select-none">
-        <div className=" w-screen flex justify-between p-4 shadow-lg items-center">
+      <div className=" select-none">
+        <div className=" w-full  flex justify-between p-4 shadow-lg items-center">
           <div
-            className=" me-20 cursor-pointer"
+            className=" md:me-20 me-5 cursor-pointer"
             onClick={() => setSidebar((s) => !s)}
           >
             <BiMenuAltLeft
@@ -29,14 +29,14 @@ const Navbar = () => {
               className=" text-[rgb(173,181,189)]"
             />
           </div>
-          <div className="text-primary text-[.9rem] font-bold tracking-widest mx-auto uppercase">
+          <div className="text-primary text-[.9rem] font-bold tracking-widest me-auto md:me-0 uppercase">
             <h1>
               Bubbly <span className=" md:inline-block hidden">Dashboard</span>
             </h1>
           </div>
           <div className="flex items-center  gap-5">
             {/* Search Box */}
-            <div className=" relative search-box">
+            <div className=" relative search-box md:inline-block hidden">
               <form className="relative input-group">
                 <input
                   type="search"
@@ -373,10 +373,11 @@ const Navbar = () => {
 
       {/* Sidebar */}
       <div className="flex">
-        <Sidebar sidebar={sidebar} />
-        <Routes>
-            <Route path="/pages" element={<Monitor/>}/>
-        </Routes>
+        <Sidebar sidebar={sidebar} mOpen={!sidebar} />
+        <div className="p-10">
+          <Routes>
+          </Routes>
+        </div>
       </div>
     </>
   );

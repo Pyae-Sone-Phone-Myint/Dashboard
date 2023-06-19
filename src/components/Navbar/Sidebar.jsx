@@ -4,79 +4,97 @@ import { AiOutlineHome } from "react-icons/ai";
 import { NavLink } from "react-router-dom";
 import { BsFillLayersFill } from "react-icons/bs";
 import { MdKeyboardArrowLeft } from "react-icons/md";
+import {
+  Card,
+  Accordion,
+  AccordionBody,
+} from "@material-tailwind/react";
 
-const Sidebar = ({ sidebar }) => {
-  const [dropdown, setDropdown] = useState(false);
+const Sidebar = ({ sidebar, mOpen }) => {
+
+  const [open, setOpen] = useState(0);
+
+  const handleOpen = (value) => {
+    setOpen(open === value ? 0 : value);
+  };
   return (
     <>
       <div
-        className={` h-[calc(100vh-80px)] sidebar ${
+        className={` sidebar h-auto ${
           sidebar && "shrink"
-        } shadow-lg relative left-0 bottom-0`}
+        } shadow-lg ${mOpen && 'open'}`}
       >
         <div className={``}>
           <h1
-            className={`text-[#adb5bd] tracking-[.2em] text-sm font-bold px-[1rem] py-[2rem] uppercase`}
+            className={`text-[#adb5bd] tracking-[.2em] text-sm font-bold px-[1rem] pt-[1.5rem] pb-[1rem] uppercase ${!sidebar && 'text-center'}`}
           >
             Main
           </h1>
-          <NavLink to={"/"} className="sidebar-list p-3 flex items-center">
-            <AiOutlineHome size={"1.6rem"} className="fixed" />
-            <h2 className={`ms-12 sidebar-title ${sidebar && "active"}`}>
-              Dashboard
-            </h2>
-          </NavLink>
-          <div className={`relative ${!sidebar && "text-center"}`}>
-            <div
-              className="relative sidebar-link p-3 flex items-center cursor-pointer select-none "
-              onClick={() => setDropdown((d) => !d)}
-            >
-              <BsFillLayersFill size={"1.6rem"} className="fixed" />
-              <h2 className={`ms-12 sidebar-title ${sidebar && "active"}`}>
-                Pages
-              </h2>
-              <MdKeyboardArrowLeft
-                className={` absolute right-2 top-auto ${
-                  dropdown && "-rotate-90"
+          <NavLink to={"/"} className="sidebar-link">
+            <div className={`flex items-center ${!sidebar && "flex-col"}`}>
+              <AiOutlineHome size={"1.3rem"} />
+              <h4
+                className={` sidebar-title ${
+                  !sidebar ? "ms-0 text-[0.75rem]" : "ms-3"
                 }`}
-                size={"1.2rem"}
-              />
+              >
+                Dashboard
+              </h4>
             </div>
-            {dropdown && (
-              <div className={`dropdown-menu-list`}>
-                <NavLink
-                  to={"/profile"}
-                  className=" px-3 py-2 sidebar-list text-[12.6px] block"
+          </NavLink>
+          <Accordion
+            open={open === 1}
+          >
+            <div
+              className="sidebar-link cursor-pointer select-none"
+              onClick={() => handleOpen(1)}
+            >
+              <div className={` flex items-center ${!sidebar && "flex-col"}`}>
+                <BsFillLayersFill size={"1.3rem"} />
+                <h4
+                  className={` sidebar-title ${
+                    !sidebar ? "ms-0 text-[0.75rem]" : "ms-3"
+                  }`}
                 >
+                  Pages
+                </h4>
+                <MdKeyboardArrowLeft
+                  className={` ${!sidebar ? "ms-0 -rotate-90" : "ms-auto"} ${
+                    open === 1  ? "-rotate-90" : ""
+                  } ${!sidebar && open === 1 ? "rotate-90" : ''}`}
+                  size={"1.3rem"}
+                />
+              </div>
+            </div>
+            <AccordionBody className="py-0 mx-0">
+              <div className={` ${!sidebar && "text-center"} sidebar-list`}>
+                <NavLink to={"/pages"} className="sidebar-link text-[.75rem]">
                   Profile
                 </NavLink>
                 <NavLink
-                  to={"/price"}
-                  className=" px-3 py-2 sidebar-list text-[12.6px] block"
+                  to={"/pricing-table"}
+                  className="sidebar-link text-[.75rem]"
                 >
                   Pricing table
                 </NavLink>
                 <NavLink
-                  to={"/contact"}
-                  className=" px-3 py-2 sidebar-list text-[12.6px] block"
+                  to={"/contacts"}
+                  className="sidebar-link text-[.75rem]"
                 >
                   Contacts
                 </NavLink>
-                <NavLink
-                  to={"/invoice"}
-                  className=" px-3 py-2 sidebar-list text-[12.6px] block"
-                >
+                <NavLink to={"/invoice"} className="sidebar-link text-[.75rem]">
                   Invoice
                 </NavLink>
                 <NavLink
-                  to={"/knowledge"}
-                  className=" px-3 py-2 sidebar-list text-[12.6px] block"
+                  to={"/knowledge-base"}
+                  className="sidebar-link text-[.75rem]"
                 >
                   Knowledge base
                 </NavLink>
               </div>
-            )}
-          </div>
+            </AccordionBody>
+          </Accordion>
         </div>
       </div>
     </>
