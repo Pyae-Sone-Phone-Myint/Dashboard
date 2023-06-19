@@ -19,20 +19,13 @@
   margin-bottom: 1rem;
 }
 .progress {
-  --bs-progress-height: 0.5rem;
-  --bs-progress-font-size: 0.675rem;
-  --bs-progress-bg: #e9ecef;
-  --bs-progress-border-radius: 0.25rem;
-  --bs-progress-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
-  --bs-progress-bar-color: #fff;
-  --bs-progress-bar-bg: #4650dd;
-  --bs-progress-bar-transition: width 0.6s ease;
   display: flex;
   height: 0.5rem;
   overflow: hidden;
-  font-size: var(--bs-progress-font-size);
-  background-color: var(--bs-progress-bg);
-  border-radius: var(--bs-progress-border-radius);
+  font-size: 0.675rem;
+  background-color: #e9ecef;
+  border-radius: 0.25rem;
+  transition:  width 0.6s ease;
 }
 @media only screen and (min-width: 992px) {
   .sales-card-container {
