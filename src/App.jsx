@@ -1,5 +1,5 @@
 import React from "react";
-import Invoice from "./pages/invoice/Invoice";
+import Path from "./routes/Path";
 
 const App = () => {
   return (
