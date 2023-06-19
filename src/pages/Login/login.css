@@ -1,0 +1,66 @@
+.form-control {
+  padding: 1rem 0.75rem;
+  height: calc(3.5rem + 2px);
+  line-height: 1.25;
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+  color: #343a40;
+  font-size: 14px;
+}
+
+.form-control::placeholder {
+  opacity: 0;
+}
+
+.form-control:focus {
+  color: #343a40;
+  background-color: #fff;
+  border-color: #a3a8ee;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(70, 80, 221, 0.25);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.form-control:focus,
+.form-control:not(:placeholder-shown) {
+  padding-top: 1.625rem;
+  padding-bottom: 0.625rem;
+}
+
+.label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1rem 0.75rem;
+  white-space: nowrap;
+  text-align: start;
+  transform-origin: 0 0;
+  transition: 0.1s ease-in-out;
+  color: rgb(52, 58, 64);
+  overflow: hidden;
+}
+
+.form-control:focus ~ .label,
+.form-control:not(:placeholder-shown) ~ .label {
+  opacity: 0.65;
+  transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
+}
+
+.form-check-input {
+  border-radius: 0.25rem;
+  height: 1em;
+  width: 1em;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  appearance: none;
+}
+
+.form-check-input:checked {
+  border-color: #4650dd;
+  background-color: #4650dd;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e");
+}
+
+.form-check-input:focus {
+  box-shadow: 0 0 0 0.25rem rgba(70, 80, 221, 0.25);
+}

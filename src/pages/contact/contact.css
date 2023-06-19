@@ -1,0 +1,44 @@
+.header {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+  font-size: calc(1.35rem + 1.2vw);
+  padding-left: 12px;
+  color: rgb(52, 58, 64);
+}
+.page {
+  color: rgb(108, 117, 125);
+}
+.avatar {
+  display: inline-block;
+  position: relative;
+  width: 5rem;
+  height: 5rem;
+  text-align: center;
+  border: #dee2e6;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  line-height: 3rem;
+  padding: 0.25rem;
+}
+.card {
+  border: none;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  height: 100%;
+  border-radius: 1rem;
+}
+.item {
+  width: 100%;
+}
+@media only screen and (min-width: 1200px) {
+  .item {
+    width: 32%;
+  }
+}
+@media only screen and (min-width: 767px) and (max-width: 1199px) {
+  .item {
+    width: 48%;
+  }
+}
