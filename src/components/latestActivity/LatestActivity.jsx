@@ -47,10 +47,14 @@ const LatestActivity = () => {
             <div className="list-group">
               {activitiesData.map((data) => (
                 <div className="list-group-item">
-                  <div className="flex gap-2 ">
-                    <div className="  w-auto">
-                      <img className="p-1 mr-2 avatar" src={data.img} alt="" />
-                    </div>
+                  <div className="flex gap-2 items-start">
+                  <div className=" p-1 rounded-full overflow-hidden shadow-lg w-16">
+                  <img
+                    src={data.img}
+                    alt=""
+                    className=" rounded-full"
+                  />
+                </div>
                     <div className=" w-full  text-sm pl-2 ">
                       <p className="">
                         {" "}
