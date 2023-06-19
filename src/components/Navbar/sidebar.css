@@ -1,0 +1,54 @@
+.sidebar {
+    width: 100px;
+    transition: 0.3s ease-in-out;
+}
+
+.sidebar.shrink {
+    width: 250px;
+}
+
+.sidebar-menu {
+    text-align: center;
+    transition: .3s ease-in-out;
+}
+
+.sidebar-menu.shrink {
+    text-align: start;
+}
+
+.sidebar-list {
+    color: #6c757d;
+    transition: .3s ease;
+}
+
+.sidebar-list:hover {
+    background-color: #e9ecef;
+}
+
+.sidebar-list.active {
+    background-color: #4650dd;
+    color: white;
+}
+
+.sidebar-link:focus {
+    background-color: #4650dd;
+    color: white;
+}
+
+.sidebar-title {
+    opacity: 0;
+    transition: .3s ease;
+}
+
+.sidebar-title.active {
+    opacity: 1;
+}
+
+.dropdown-menu-list {
+    width: 100%;
+    display: block;
+    opacity: 1;
+    transition: all .3s ease-in-out;
+    background: #f8f9fa;
+    box-shadow: inset 4px -2px 0.25rem 0px rgba(0,0,0,.075);
+}
