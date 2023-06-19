@@ -6,7 +6,7 @@ import PricingData from "./pricing.json";
 const Pricing = () => {
   return (
     <div className=" bg-[#f8f9fa]">
-      <div className=" px-4 xl:px-5 pt-12">
+      <div className=" pt-12">
         <div className="page-breadcrumb mb-8 px-3">
           <p>
             {" "}

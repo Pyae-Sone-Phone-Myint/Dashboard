@@ -12,14 +12,18 @@ import "./navbar.css";
 import Sidebar from "./Sidebar";
 import { Route, Routes } from "react-router-dom";
 import Monitor from "../monitor/Monitor";
+import Dashboard from "../../pages/Dashboard/Dashboard";
+import Pricing from "../../pages/pricing/Pricing";
+import Contact from "../../pages/contact/Contact";
+import Invoice from "../../pages/invoice/Invoice";
 
 const Navbar = () => {
   const [sidebar, setSidebar] = useState(true);
   return (
     <>
       {/* Navbar */}
-      <div className=" select-none">
-        <div className=" w-full  flex justify-between p-4 shadow-lg items-center">
+      <div className=" select-none shadow-lg sticky top-0 z-50 bg-white">
+        <div className=" w-full  flex justify-between p-4  items-center">
           <div
             className=" md:me-20 me-5 cursor-pointer"
             onClick={() => setSidebar((s) => !s)}
@@ -374,9 +378,20 @@ const Navbar = () => {
       {/* Sidebar */}
       <div className="flex">
         <Sidebar sidebar={sidebar} mOpen={!sidebar} />
-        <div className="p-10">
-          <Routes>
-          </Routes>
+        <div className=" w-full">
+          <div className=" w-full md:p-10 bg-[#f8f9fa]">
+            <Routes>
+              <Route path="/" element={<Dashboard />} />
+              <Route path="/pricing-table" element={<Pricing/>} />
+              <Route path='/contacts' element={<Contact/>}/>
+              <Route path="/invoice" element={<Invoice/>} />
+            </Routes>
+          </div>
+          <footer className=" bg-white py-7 px-10">
+            <h4 className=" text-sm font-bold leading-5 ">
+              Your company © 2023
+            </h4>
+          </footer>
         </div>
       </div>
     </>
