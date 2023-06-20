@@ -15,7 +15,7 @@ const LatestActivity = () => {
       <div className=" activity-card-adjust-height-xl ">
         <div className="activity-card">
           <div className="activity-card-header flex justify-between items-center">
-            <div className="card-heading">Latest Activity</div>
+            <div className="activity-heading">Latest Activity</div>
             <div className=" relative">
               <button
                 onClick={dropdownToggle}

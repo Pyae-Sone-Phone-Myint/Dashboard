@@ -376,7 +376,7 @@ const Navbar = () => {
       </div>
 
       {/* Sidebar */}
-      <div className="flex">
+      <div className="flex w-fit">
         <Sidebar sidebar={sidebar} mOpen={!sidebar} />
         <div className=" w-full">
           <div className=" w-full md:p-10 bg-[#f8f9fa]">

@@ -8,7 +8,7 @@ import PieChart from "./PieChart";
 const ChartCard = () => {
 	return (
 		<>
-			<div className=" container mx-auto flex flex-col lg:flex-row gap-4 mb-10">
+			<div className=" flex flex-col lg:flex-row gap-4 mb-10">
 				<div className=" w-full lg:w-1/3 p-5 shadow-lg">
 					<div className=" p-5">
 						<h2 className=" text-base font-normal tracking-wider">

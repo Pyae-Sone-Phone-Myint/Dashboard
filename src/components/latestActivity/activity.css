@@ -8,19 +8,20 @@
   padding-bottom: 5rem;
   border-radius: 1rem;
   overflow: hidden;
+  height: 100%;
 }
 .activity-card-header {
   position: relative;
-  padding: 2rem 2rem;
+  padding: 1rem 2rem;
   border-bottom: none;
   background-color: #fff;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
   z-index: 2;
 }
-.activity-card-header:firscardtrt-child {
+.activity-card-header:first-child {
   border-radius: calc(1rem - 1px) calc(1rem - 1px) 0 0;
 }
-.card-heading {
+.activity-heading {
   margin-bottom: 0;
   font-size: 0.9rem;
   font-weight: 400;
@@ -101,7 +102,7 @@
     margin-bottom: 2rem;
     padding-bottom: 1rem;
   }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 720px) {
   .activity-section {
     width: 25%;
   }
@@ -110,7 +111,7 @@
     min-height: 100%;
   }
   .activity-card-adjust-height-xl .activity-card {
-    height: calc(100% - 24px);
+    /* height: calc(100% - 24px); */
     max-height: none;
   }
   .activity-card-body {

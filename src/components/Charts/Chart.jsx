@@ -10,23 +10,22 @@ import { HiOutlineMinus, HiOutlineTrash } from "react-icons/hi";
 import { AiOutlineReload } from "react-icons/ai";
 import BarChart from "./BarChart";
 import { BsDot } from "react-icons/bs";
-import ChartCard from "./ChartCard";
 
 const Chart = () => {
 	const [isOpen, setIsOpen] = useState(false);
 	return (
 		<>
-			<div className="container shadow-sm flex flex-col lg:flex-row mx-auto gap-10">
-				<div className="w-full lg:w-2/3 shadow-lg rounded-md">
+			<div className=" shadow-sm flex flex-col lg:flex-row gap-10">
+				<div className="w-full shadow-lg rounded-[1rem] overflow-hidden">
 					{/* header */}
-					<div className="flex items-center justify-between p-5">
-						<h2 className=" text-base font-normal tracking-wider">
+					<div className="flex items-center justify-between p-[1rem] shadow">
+						<h2 className=" text-base font-normal tracking-wider uppercase">
 							Sales By Channel
 						</h2>
 						<div className="relative">
 							<button
 								onClick={() => setIsOpen(!isOpen)}
-								className="text-gray-400  hover:bg-[#dadcf8] hover:text-[#4650dd] duration-300 w-10 h-10 flex items-center justify-center rounded-full "
+								className="text-gray-400  hover:bg-[#dadcf8] hover:text-[#4650dd] duration-300 w-8 h-8 flex items-center justify-center rounded-full "
 							>
 								<BiDotsVerticalRounded className=" text-2xl" />
 							</button>
@@ -55,7 +54,6 @@ const Chart = () => {
 							)}
 						</div>
 					</div>
-					<hr className=" shadow-md" />
 					{/* 3 cards */}
 					<div className=" flex flex-wrap md:flex-nowrap container items-center justify-around p-5">
 						<div className="flex flex-col gap-3 px-2 w-full md:w-auto py-4  border-gray-200">
@@ -121,18 +119,8 @@ const Chart = () => {
 						</div>
 					</div>
 				</div>
-				<div className="w-full lg:w-1/3">
-					{/* header */}
-					<div className=" p-5">
-						<h2 className=" text-base font-normal tracking-wider">
-							Latest Activity
-						</h2>	
-					</div>
-					<hr className=" shadow-md" />
-				</div>
 			</div>
 
-			<ChartCard/>
 		</>
 	);
 };
