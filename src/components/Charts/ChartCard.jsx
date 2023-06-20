@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import "./Chart.css";
 import DoughnutChart from "./DoughnutChart";
@@ -71,10 +72,12 @@ const ChartCard = () => {
 								<img
 									src="https://d19m59y37dris4.cloudfront.net/bubbly/1-3-2/img/avatar-1.jpg"
 									className="w-12 shadow-md h-12 profile-img rounded-full  border-4 border-white "
+
 								/>
 							</div>
 						</div>
 						{/* 2nd one */}
+
 						<div className=" px-4 py-1 my-2">
 							<div className=" flex items-center gap-8  justify-between">
 								<p className=" text-[#343a40]  text-sm font-bold">Internal Linkbuilding</p>
@@ -96,10 +99,12 @@ const ChartCard = () => {
 								<img
 									src="https://d19m59y37dris4.cloudfront.net/bubbly/1-3-2/img/avatar-4.jpg"
 									className="w-12 shadow-md h-12 profile-img rounded-full border-4 border-white"
+
 								/>
 							</div>
 						</div>
 						{/* 3rd one */}
+
 						<div className=" px-4 py-1 my-2">
 							<div className=" flex items-center gap-8 justify-between">
 								<p className=" text-[#343a40]  text-sm font-bold">New Writer Onboarding</p>
@@ -113,10 +118,12 @@ const ChartCard = () => {
 								<img
 									src="https://d19m59y37dris4.cloudfront.net/bubbly/1-3-2/img/avatar-1.jpg"
 									className="w-12 shadow-md h-12 profile-img rounded-full  border-4 border-white "
+
 								/>
 							</div>
 						</div>
 						{/* 4th one */}
+
 						<div className=" px-4 py-1 my-2">
 							<div className=" flex items-center gap-8 justify-between">
 								<p className=" text-[#343a40]  text-sm font-bold">Blog Post Drafts</p>
@@ -130,12 +137,14 @@ const ChartCard = () => {
 								<img
 									src="https://d19m59y37dris4.cloudfront.net/bubbly/1-3-2/img/avatar-1.jpg"
 									className="w-12 h-12 profile-img shadow-md rounded-full  border-4 border-white "
+
 								/>
 							</div>
 						</div>
 					</div>
 				</div>
 				{/* dognut */}
+
 				<div className=" w-full lg:w-1/3  shadow-lg bg-white rounded-[1rem] mx-3">
 					<div className=" chart-card-header flex justify-between ">
 						<h2 className=" text-sm font-normal tracking-[.2em] text-[#343a40]   uppercase">
@@ -174,6 +183,7 @@ const ChartCard = () => {
 				
 					{/* card  */}
 					<div className=" container mx-auto mt-8 flex flex-col  p-5">
+
 						<div className="w-full h-full md:w-[70%] md:h-[70%] lg:w-[50%] px-4 py-2 lg:h-[50%]  mx-auto">
 							<DoughnutChart />
 						</div>
@@ -181,7 +191,7 @@ const ChartCard = () => {
 							<h3 className=" text-[#adb5bd] capitalize text-base tracking-widest font-normal">
 								TOTAL CLOSED PROJECTS
 							</h3>
-							
+
 							<div className="flex gap-3 items-center justify-center">
 								<p className="text-[#6c757d] font-bold">2,235</p>
 								<div className="flex items-center gap-2">
@@ -232,6 +242,7 @@ const ChartCard = () => {
 					</div>
 				</div>
 				{/* pie  */}
+
 				<div className=" w-full lg:w-1/3 shadow-lg bg-white rounded-[1rem] mx-3">
 					<div className=" chart-card-header flex justify-between">
 						<h2 className=" text-sm font-normal tracking-[.2em] text-[#343a40]  uppercase">
@@ -269,6 +280,7 @@ const ChartCard = () => {
 					</div>
 				
 					<div className=" container mx-auto mt-8 flex flex-col  p-5 ">
+
 						<div className="w-full h-full md:w-[70%] md:h-[70%] lg:w-[50%] px-4 py-2 lg:h-[50%]  mx-auto">
 							<PieChart />
 						</div>

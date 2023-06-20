@@ -9,30 +9,37 @@ import { GiExpand } from "react-icons/gi";
 import { HiOutlineMinus, HiOutlineTrash } from "react-icons/hi";
 import { AiOutlineReload } from "react-icons/ai";
 import BarChart from "./BarChart";
+
 import { BsDot, BsTrash } from "react-icons/bs";
 import { FaExpandArrowsAlt, FaWindowMinimize } from "react-icons/fa";
 import { TbReload } from "react-icons/tb";
+
 
 const Chart = () => {
 	const [isOpen, setIsOpen] = useState(false);
 	return (
 		<>
 
+
 			<div className=" shadow-sm flex flex-col lg:flex-row gap-10 bg-white rounded-[1rem]">
 				<div className="w-full shadow-lg rounded-[1rem] overflow-hidden">
 					{/* header */}
 					<div className="flex items-center justify-between px-[2rem] pt-[2rem] pb-[1.5rem] shadow">
 						<h2 className=" text-base font-normal tracking-[.2em] text-[#343a40]   uppercase">
+
 							Sales By Channel
 						</h2>
 						<div className="relative">
 							<button
 								onClick={() => setIsOpen(!isOpen)}
+
 								className="text-gray-400  hover:bg-[#dadcf8] hover:text-[#4650dd] duration-300 w-8 h-8 flex items-center justify-center rounded-full "
+
 							>
 								<BiDotsVerticalRounded className=" text-2xl" />
 							</button>
 							{/* dropdowns */}
+
 							
 							<div
 										className={`dropdown-menu block py-2 text-[12.6px] w-[150px] duration-200 ease-in-out ${
@@ -55,6 +62,7 @@ const Chart = () => {
 						
 						</div>
 					</div>
+
 					{/* 3 cards */}
 					<div className=" flex flex-wrap md:flex-nowrap container items-center justify-around p-5">
 						<div className="flex flex-col gap-3 px-2 w-full md:w-auto py-4  border-gray-200">
@@ -97,7 +105,9 @@ const Chart = () => {
 								</span>
 							</div>
 						</div>
+
 						<div className="  lg:hidden w-[5rem] h-[5rem] flex justify-center items-center bg-[#dadcf8] rounded-full">
+
 							<RiHandCoinLine className=" text-4xl text-[#4650dd]" />
 						</div>
 					</div>
@@ -121,7 +131,9 @@ const Chart = () => {
 					</div>
 				</div>
 
+
 			</div>
+
 
 		</>
 	);
