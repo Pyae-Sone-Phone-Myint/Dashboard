@@ -9,51 +9,60 @@ import { GiExpand } from "react-icons/gi";
 import { HiOutlineMinus, HiOutlineTrash } from "react-icons/hi";
 import { AiOutlineReload } from "react-icons/ai";
 import BarChart from "./BarChart";
-import { BsDot } from "react-icons/bs";
+
+import { BsDot, BsTrash } from "react-icons/bs";
+import { FaExpandArrowsAlt, FaWindowMinimize } from "react-icons/fa";
+import { TbReload } from "react-icons/tb";
+
 
 const Chart = () => {
 	const [isOpen, setIsOpen] = useState(false);
 	return (
 		<>
-			<div className=" shadow-sm flex flex-col lg:flex-row gap-10">
+
+
+			<div className=" shadow-sm flex flex-col lg:flex-row gap-10 bg-white rounded-[1rem]">
 				<div className="w-full shadow-lg rounded-[1rem] overflow-hidden">
 					{/* header */}
-					<div className="flex items-center justify-between p-[1rem] shadow">
-						<h2 className=" text-base font-normal tracking-wider uppercase">
+					<div className="flex items-center justify-between px-[2rem] pt-[2rem] pb-[1.5rem] shadow">
+						<h2 className=" text-base font-normal tracking-[.2em] text-[#343a40]   uppercase">
+
 							Sales By Channel
 						</h2>
 						<div className="relative">
 							<button
 								onClick={() => setIsOpen(!isOpen)}
+
 								className="text-gray-400  hover:bg-[#dadcf8] hover:text-[#4650dd] duration-300 w-8 h-8 flex items-center justify-center rounded-full "
+
 							>
 								<BiDotsVerticalRounded className=" text-2xl" />
 							</button>
 							{/* dropdowns */}
-							{isOpen && (
-								<div className="absolute right-0 mt-2 bg-white shadow-md space-y-2">
-									<ul className=" flex flex-col w-48">
-										<li className=" flex px-4 py-2 text-[#495057] hover:bg-gray-200 items-center gap-2">
-											<GiExpand />
-											<a href="">Expand</a>
-										</li>
-										<li className=" flex px-4 py-2 text-[#495057] hover:bg-gray-200 items-center gap-2">
-											<HiOutlineMinus />
-											<a href="">Minimize</a>
-										</li>
-										<li className=" flex px-4 py-2 text-[#495057] hover:bg-gray-200 items-center gap-2">
-											<AiOutlineReload />
-											<a href="">Reload</a>
-										</li>
-										<li className=" flex px-4 py-2 text-[#495057] hover:bg-gray-200 items-center gap-2">
-											<HiOutlineTrash />
-											<a href="">Remove</a>
-										</li>
-									</ul>
+
+							
+							<div
+										className={`dropdown-menu block py-2 text-[12.6px] w-[150px] duration-200 ease-in-out ${
+										  isOpen ? "opacity-1" : "opacity-0  invisible"
+										}`}
+									  >
+									  <a href="" className=" dropdown-item flex items-center gap-3 ">
+									  <FaExpandArrowsAlt /> <span>Expand</span>
+									</a>
+									<a href="" className=" dropdown-item flex items-center gap-3 ">
+									  <FaWindowMinimize /> <span>Minimize</span>
+									</a>
+									<a href="" className=" dropdown-item flex items-center gap-3 ">
+									  <TbReload className=" font-bold" /> <span>Reload</span>
+									</a>
+									<a href="" className=" dropdown-item flex items-center gap-3 ">
+									  <BsTrash /> <span>Remove</span>
+									</a>
 								</div>
-							)}
+						
 						</div>
 					</div>
+
 					{/* 3 cards */}
 					<div className=" flex flex-wrap md:flex-nowrap container items-center justify-around p-5">
 						<div className="flex flex-col gap-3 px-2 w-full md:w-auto py-4  border-gray-200">
@@ -96,7 +105,9 @@ const Chart = () => {
 								</span>
 							</div>
 						</div>
+
 						<div className="  lg:hidden w-[5rem] h-[5rem] flex justify-center items-center bg-[#dadcf8] rounded-full">
+
 							<RiHandCoinLine className=" text-4xl text-[#4650dd]" />
 						</div>
 					</div>
@@ -119,7 +130,10 @@ const Chart = () => {
 						</div>
 					</div>
 				</div>
+
+
 			</div>
+
 
 		</>
 	);

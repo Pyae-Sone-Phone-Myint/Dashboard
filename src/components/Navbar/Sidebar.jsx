@@ -1,18 +1,14 @@
 import React, { useState } from "react";
 import "./sidebar.css";
 import { AiOutlineHome } from "react-icons/ai";
-import { NavLink } from "react-router-dom";
+import { NavLink, Navigate, useNavigate } from "react-router-dom";
 import { BsFillLayersFill } from "react-icons/bs";
 import { MdKeyboardArrowLeft } from "react-icons/md";
-import {
-  Card,
-  Accordion,
-  AccordionBody,
-} from "@material-tailwind/react";
+import { Card, Accordion, AccordionBody } from "@material-tailwind/react";
 
 const Sidebar = ({ sidebar, mOpen }) => {
-
   const [open, setOpen] = useState(0);
+  const nav = useNavigate()
 
   const handleOpen = (value) => {
     setOpen(open === value ? 0 : value);
@@ -20,13 +16,15 @@ const Sidebar = ({ sidebar, mOpen }) => {
   return (
     <>
       <div
-        className={` sidebar h-auto ${
-          sidebar && "shrink"
-        } shadow-lg ${mOpen && 'open'}`}
+        className={` sidebar h-auto ${sidebar && "shrink"} shadow-lg ${
+          mOpen && "open"
+        }`}
       >
         <div className={``}>
           <h1
-            className={`text-[#adb5bd] tracking-[.2em] text-sm font-bold px-[1rem] pt-[1.5rem] pb-[1rem] uppercase ${!sidebar && 'text-center'}`}
+            className={`text-[#adb5bd] tracking-[.2em] text-sm font-bold px-[1rem] pt-[1.5rem] pb-[1rem] uppercase ${
+              !sidebar && "text-center"
+            }`}
           >
             Main
           </h1>
@@ -42,9 +40,7 @@ const Sidebar = ({ sidebar, mOpen }) => {
               </h4>
             </div>
           </NavLink>
-          <Accordion
-            open={open === 1}
-          >
+          <Accordion open={open === 1}>
             <div
               className="sidebar-link cursor-pointer select-none"
               onClick={() => handleOpen(1)}
@@ -60,8 +56,8 @@ const Sidebar = ({ sidebar, mOpen }) => {
                 </h4>
                 <MdKeyboardArrowLeft
                   className={` ${!sidebar ? "ms-0 -rotate-90" : "ms-auto"} ${
-                    open === 1  ? "-rotate-90" : ""
-                  } ${!sidebar && open === 1 ? "rotate-90" : ''}`}
+                    open === 1 ? "-rotate-90" : ""
+                  } ${!sidebar && open === 1 ? "rotate-90" : ""}`}
                   size={"1.3rem"}
                 />
               </div>
@@ -95,6 +91,15 @@ const Sidebar = ({ sidebar, mOpen }) => {
               </div>
             </AccordionBody>
           </Accordion>
+          <div
+            className=" cursor-pointer sidebar-link"
+            onClick={() => {
+              localStorage.removeItem("token");
+              nav('/login')
+            }}
+          >
+            Logout
+          </div>
         </div>
       </div>
     </>
