@@ -16,8 +16,8 @@ const Chart = () => {
 	const [isOpen, setIsOpen] = useState(false);
 	return (
 		<>
-			<div className="container shadow-sm flex flex-col lg:flex-row mx-auto gap-10">
-				<div className="w-full lg:w-2/3 shadow-lg rounded-md">
+			<div className="container shadow-sm  gap-10">
+				<div className=" shadow-lg rounded-md">
 					{/* header */}
 					<div className="flex items-center justify-between p-5">
 						<h2 className=" text-base font-normal tracking-wider">
@@ -121,18 +121,10 @@ const Chart = () => {
 						</div>
 					</div>
 				</div>
-				<div className="w-full lg:w-1/3">
-					{/* header */}
-					<div className=" p-5">
-						<h2 className=" text-base font-normal tracking-wider">
-							Latest Activity
-						</h2>	
-					</div>
-					<hr className=" shadow-md" />
-				</div>
+				
 			</div>
 
-			<ChartCard/>
+			{/* <ChartCard/> */}
 		</>
 	);
 };
