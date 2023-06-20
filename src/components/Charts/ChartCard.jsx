@@ -1,111 +1,189 @@
-import React from "react";
+
+import React, { useState } from "react";
 import "./Chart.css";
 import DoughnutChart from "./DoughnutChart";
-
-import { BsDot } from "react-icons/bs";
+import { BiDotsVerticalRounded, BiUpArrowAlt } from "react-icons/bi";
+import { BsDot, BsTrash } from "react-icons/bs";
 import PieChart from "./PieChart";
+import { FaExpandArrowsAlt, FaWindowMinimize } from "react-icons/fa";
+import { TbReload } from "react-icons/tb";
 
 const ChartCard = () => {
+	const [isMenuOneOpen, setIsMenuOneOpen] = useState(false);
+	const [isMenuTwoOpen, setIsMenuTwoOpen] = useState(false);
+	const [isMenuThreeOpen, setIsMenuThreeOpen] = useState(false);
 	return (
 		<>
-			<div className=" container mx-auto flex flex-col lg:flex-row gap-4 mb-10">
-				<div className=" w-full lg:w-1/3 p-5 shadow-lg">
-					<div className=" p-5">
-						<h2 className=" text-base font-normal tracking-wider">
-							Latest Activity
+			<div className=" flex flex-col lg:flex-row gap-4 mb-10">
+				<div className=" w-full lg:w-1/3  shadow-lg bg-white rounded-[1rem] mx-3">
+					<div className=" chart-card-header  flex justify-between">
+						<h2 className="  text-sm font-normal tracking-[.2em] text-[#343a40]   uppercase">
+						PROJECT UPDATES
 						</h2>
+						<div className="relative">
+							<button
+								onClick={() => setIsMenuOneOpen(!isMenuOneOpen)}
+								className="text-gray-400  hover:bg-[#dadcf8] hover:text-[#4650dd] duration-300 w-8 h-8 flex items-center justify-center rounded-full "
+							>
+								<BiDotsVerticalRounded className=" text-2xl" />
+							</button>
+							{/* dropdowns */}
+							
+							<div
+										className={`dropdown-menu block py-2 text-[12.6px] w-[150px] duration-200 ease-in-out ${
+											isMenuOneOpen ? "opacity-1" : "opacity-0  invisible"
+										}`}
+									  >
+									  <a href="" className=" dropdown-item flex items-center gap-3 ">
+									  <FaExpandArrowsAlt /> <span>Expand</span>
+									</a>
+									<a href="" className=" dropdown-item flex items-center gap-3 ">
+									  <FaWindowMinimize /> <span>Minimize</span>
+									</a>
+									<a href="" className=" dropdown-item flex items-center gap-3 ">
+									  <TbReload className=" font-bold" /> <span>Reload</span>
+									</a>
+									<a href="" className=" dropdown-item flex items-center gap-3 ">
+									  <BsTrash /> <span>Remove</span>
+									</a>
+								</div>
+						
+						</div>
 					</div>
-					<hr className=" shadow-md" />
+	
 					{/* card  */}
-					<div className="duration-300">
+					<div className="duration-300 p-5">
 						{/* 1st one */}
-						<div className=" px-2 py-1">
-							<div className=" flex items-center gap-8">
-								<p className=" text-base font-bold">Publish New Theme</p>
+						<div className=" px-4 py-1  my-2">
+							<div className=" flex items-center gap-8 justify-between">
+								<p className=" text-[#343a40]  text-sm font-bold">Publish New Theme</p>
 								<p className=" text-[#adb5bd] text-sm">10 mins ago</p>
 							</div>
-							<div className="flex items-center  mt-2">
-								<img
+							<div className="flex items-center  mt-2  px-4">
+								
+							
+							 <img
 									src="https://d19m59y37dris4.cloudfront.net/bubbly/1-3-2/img/avatar-0.jpg"
-									className="w-12 shadow-md  h-12 profile-img rounded-full border border-4 border-white"
+									className="w-12 shadow-md  h-12 profile-img rounded-full  border-4 border-white tooltip" title="ji"
+									
 								/>
+							
+								
 								<img
 									src="https://d19m59y37dris4.cloudfront.net/bubbly/1-3-2/img/avatar-1.jpg"
-									className="w-12 shadow-md h-12 profile-img rounded-full border border-4 border-white "
+									className="w-12 shadow-md h-12 profile-img rounded-full  border-4 border-white "
+
 								/>
 							</div>
 						</div>
 						{/* 2nd one */}
-						<div className=" px-2 py-1">
-							<div className=" flex items-center gap-8 ">
-								<p className=" text-base font-bold">Internal Linkbuilding</p>
+
+						<div className=" px-4 py-1 my-2">
+							<div className=" flex items-center gap-8  justify-between">
+								<p className=" text-[#343a40]  text-sm font-bold">Internal Linkbuilding</p>
 								<p className=" text-[#adb5bd] text-sm">2 hours ago</p>
 							</div>
-							<div className="flex items-center  mt-2">
+							<div className="flex items-center  mt-2 px-4">
 								<img
 									src="https://d19m59y37dris4.cloudfront.net/bubbly/1-3-2/img/avatar-1.jpg"
-									className="w-12 shadow-md profile-img h-12 rounded-full border border-4 border-white"
+									className="w-12 shadow-md profile-img h-12 rounded-full  border-4 border-white"
 								/>
 								<img
 									src="https://d19m59y37dris4.cloudfront.net/bubbly/1-3-2/img/avatar-2.jpg"
-									className="w-12 shadow-md h-12 profile-img rounded-full border border-4 border-white "
+									className="w-12 shadow-md h-12 profile-img rounded-full  border-4 border-white "
 								/>
 								<img
 									src="https://d19m59y37dris4.cloudfront.net/bubbly/1-3-2/img/avatar-3.jpg"
-									className="w-12 shadow-md h-12 profile-img rounded-full border border-4 border-white"
+									className="w-12 shadow-md h-12 profile-img rounded-full  border-4 border-white"
 								/>
 								<img
 									src="https://d19m59y37dris4.cloudfront.net/bubbly/1-3-2/img/avatar-4.jpg"
-									className="w-12 shadow-md h-12 profile-img rounded-full border border-4 border-white"
+									className="w-12 shadow-md h-12 profile-img rounded-full border-4 border-white"
+
 								/>
 							</div>
 						</div>
 						{/* 3rd one */}
-						<div className=" px-2 py-1">
-							<div className=" flex items-center gap-8 ">
-								<p className=" text-base font-bold">New Writer Onboarding</p>
+
+						<div className=" px-4 py-1 my-2">
+							<div className=" flex items-center gap-8 justify-between">
+								<p className=" text-[#343a40]  text-sm font-bold">New Writer Onboarding</p>
 								<p className=" text-[#adb5bd] text-sm">10 mins ago</p>
 							</div>
-							<div className="flex items-center mt-2">
+							<div className="flex items-center mt-2 px-4">
 								<img
 									src="https://d19m59y37dris4.cloudfront.net/bubbly/1-3-2/img/avatar-0.jpg"
-									className="w-12 shadow-md profile-img h-12 rounded-full border border-4 border-white"
+									className="w-12 shadow-md profile-img h-12 rounded-full  border-4 border-white"
 								/>
 								<img
 									src="https://d19m59y37dris4.cloudfront.net/bubbly/1-3-2/img/avatar-1.jpg"
-									className="w-12 shadow-md h-12 profile-img rounded-full border border-4 border-white "
+									className="w-12 shadow-md h-12 profile-img rounded-full  border-4 border-white "
+
 								/>
 							</div>
 						</div>
 						{/* 4th one */}
-						<div className=" px-2 py-1">
-							<div className=" flex items-center gap-8">
-								<p className=" text-base font-bold">Blog Post Drafts</p>
+
+						<div className=" px-4 py-1 my-2">
+							<div className=" flex items-center gap-8 justify-between">
+								<p className=" text-[#343a40]  text-sm font-bold">Blog Post Drafts</p>
 								<p className=" text-[#adb5bd] text-sm">5 days ago</p>
 							</div>
-							<div className="flex items-center mt-2">
+							<div className="flex items-center mt-2 px-4">
 								<img
 									src="https://d19m59y37dris4.cloudfront.net/bubbly/1-3-2/img/avatar-0.jpg"
-									className="w-12  profile-img h-12 shadow-md rounded-full border border-4 border-white"
+									className="w-12  profile-img h-12 shadow-md rounded-full  border-4 border-white"
 								/>
 								<img
 									src="https://d19m59y37dris4.cloudfront.net/bubbly/1-3-2/img/avatar-1.jpg"
-									className="w-12 h-12 profile-img shadow-md rounded-full border border-4 border-white "
+									className="w-12 h-12 profile-img shadow-md rounded-full  border-4 border-white "
+
 								/>
 							</div>
 						</div>
 					</div>
 				</div>
 				{/* dognut */}
-				<div className=" w-full lg:w-1/3 p-5 shadow-lg">
-					<div className=" p-5">
-						<h2 className=" text-base font-normal tracking-wider">
-							Latest Activity
+
+				<div className=" w-full lg:w-1/3  shadow-lg bg-white rounded-[1rem] mx-3">
+					<div className=" chart-card-header flex justify-between ">
+						<h2 className=" text-sm font-normal tracking-[.2em] text-[#343a40]   uppercase">
+						CLOSED PROJECTS
 						</h2>
+						<div className="relative">
+							<button
+								onClick={() => setIsMenuTwoOpen(!isMenuTwoOpen)}
+								className="text-gray-400  hover:bg-[#dadcf8] hover:text-[#4650dd] duration-300 w-8 h-8 flex items-center justify-center rounded-full "
+							>
+								<BiDotsVerticalRounded className=" text-2xl" />
+							</button>
+							{/* dropdowns */}
+							
+							<div
+										className={`dropdown-menu block py-2 text-[12.6px] w-[150px] duration-200 ease-in-out ${
+											isMenuTwoOpen ? "opacity-1" : "opacity-0  invisible"
+										}`}
+									  >
+									  <a href="" className=" dropdown-item flex items-center gap-3 ">
+									  <FaExpandArrowsAlt /> <span>Expand</span>
+									</a>
+									<a href="" className=" dropdown-item flex items-center gap-3 ">
+									  <FaWindowMinimize /> <span>Minimize</span>
+									</a>
+									<a href="" className=" dropdown-item flex items-center gap-3 ">
+									  <TbReload className=" font-bold" /> <span>Reload</span>
+									</a>
+									<a href="" className=" dropdown-item flex items-center gap-3 ">
+									  <BsTrash /> <span>Remove</span>
+									</a>
+								</div>
+						
+						</div>
 					</div>
-					<hr className=" shadow-md" />
+				
 					{/* card  */}
-					<div className=" container mx-auto mt-8 flex flex-col ">
+					<div className=" container mx-auto mt-8 flex flex-col  p-5">
+
 						<div className="w-full h-full md:w-[70%] md:h-[70%] lg:w-[50%] px-4 py-2 lg:h-[50%]  mx-auto">
 							<DoughnutChart />
 						</div>
@@ -113,6 +191,7 @@ const ChartCard = () => {
 							<h3 className=" text-[#adb5bd] capitalize text-base tracking-widest font-normal">
 								TOTAL CLOSED PROJECTS
 							</h3>
+
 							<div className="flex gap-3 items-center justify-center">
 								<p className="text-[#6c757d] font-bold">2,235</p>
 								<div className="flex items-center gap-2">
@@ -163,15 +242,45 @@ const ChartCard = () => {
 					</div>
 				</div>
 				{/* pie  */}
-				<div className=" w-full lg:w-1/3 p-5 shadow-lg">
-					<div className=" p-5">
-						<h2 className=" text-base font-normal tracking-wider">
-							Latest Activity
+
+				<div className=" w-full lg:w-1/3 shadow-lg bg-white rounded-[1rem] mx-3">
+					<div className=" chart-card-header flex justify-between">
+						<h2 className=" text-sm font-normal tracking-[.2em] text-[#343a40]  uppercase">
+						TICKETS SOLVED
 						</h2>
+						<div className="relative">
+							<button
+								onClick={() => setIsMenuThreeOpen(!isMenuThreeOpen)}
+								className="text-gray-400  hover:bg-[#dadcf8] hover:text-[#4650dd] duration-300 w-8 h-8 flex items-center justify-center rounded-full "
+							>
+								<BiDotsVerticalRounded className=" text-2xl" />
+							</button>
+							{/* dropdowns */}
+							
+							<div
+										className={`dropdown-menu block py-2 text-[12.6px] w-[150px] duration-200 ease-in-out ${
+											isMenuThreeOpen ? "opacity-1" : "opacity-0  invisible"
+										}`}
+									  >
+									  <a href="" className=" dropdown-item flex items-center gap-3 ">
+									  <FaExpandArrowsAlt /> <span>Expand</span>
+									</a>
+									<a href="" className=" dropdown-item flex items-center gap-3 ">
+									  <FaWindowMinimize /> <span>Minimize</span>
+									</a>
+									<a href="" className=" dropdown-item flex items-center gap-3 ">
+									  <TbReload className=" font-bold" /> <span>Reload</span>
+									</a>
+									<a href="" className=" dropdown-item flex items-center gap-3 ">
+									  <BsTrash /> <span>Remove</span>
+									</a>
+								</div>
+						
+						</div>
 					</div>
-					<hr className=" shadow-md" />
-					{/* card  */}
-					<div className=" container mx-auto mt-8 flex flex-col ">
+				
+					<div className=" container mx-auto mt-8 flex flex-col  p-5 ">
+
 						<div className="w-full h-full md:w-[70%] md:h-[70%] lg:w-[50%] px-4 py-2 lg:h-[50%]  mx-auto">
 							<PieChart />
 						</div>

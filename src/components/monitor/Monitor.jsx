@@ -4,17 +4,19 @@ import { BsSpeedometer2, BsBook, BsJournalBookmark, BsCaretDown } from "react-ic
 import { BiCaretUp, BiCaretDown } from "react-icons/bi";
 import { MdAddLocationAlt } from "react-icons/md";
 import monitorData from "./monitor-data.json";
+import Reveal from "../animations/Reveal";
 const Monitor = () => {
   return (
     <div>
       <div className="page-header">
         <h1 className=" header ">Default Dashboard</h1>
       </div>
+      <Reveal>
       <div className="monitor-card-row flex flex-wrap">
         {monitorData.map((data) => {
           return (
-            <div className="monitor-card-item" key={data.id}>
-              <div className="monitor-card h-full">
+            <div className="monitor-card-item " key={data.id}>
+              <div className="monitor-card h-full bg-white">
                 <div className="monitor-card-body">
                   <div className="flex justify-between items-center">
                     <div className="">
@@ -45,6 +47,7 @@ const Monitor = () => {
           );
         })}
       </div>
+      </Reveal>
     </div>
   );
 };

@@ -2,29 +2,34 @@
   padding-right: calc(1.5rem * 0.5);
   padding-left: calc(1.5rem * 0.5);
   width: 100%;
+   
 }
 .activity-card {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  padding-bottom: 1rem;
-  border-radius: 8px;
+
+  padding-bottom: 5rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  height: 100%;
 }
 .activity-card-header {
   position: relative;
-  padding: 2rem 2rem;
+  padding: 2rem 2rem 1.5rem 2rem;
   border-bottom: none;
   background-color: #fff;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
   z-index: 2;
 }
-.activity-card-header:firscardtrt-child {
+.activity-card-header:first-child {
   border-radius: calc(1rem - 1px) calc(1rem - 1px) 0 0;
 }
-.card-heading {
+.activity-heading {
   margin-bottom: 0;
   font-size: 0.9rem;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+  white-space: nowrap;
 }
 .activity-section .dropdown-menu {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
@@ -56,6 +61,7 @@
   overflow: auto;
   background-color: white;
   border-radius: 0.25rem;
+
 }
 .activity-card-body .list-group {
   border-radius: 0.25rem;
@@ -67,6 +73,7 @@
   border: 0;
   padding-top: 8px;
   padding-bottom: 8px;
+  z-index: 1;
 }
 .activity-card-body .list-group-item::before {
   position: absolute;
@@ -74,10 +81,12 @@
   height: 100%;
   content: "";
   border-left: 1px solid #dee2e6;
+  z-index: -1;
 }
 .activity-card-body .list-group-item:last-child::before {
   height: 50%;
 }
+
 .activity-card-body .avatar {
   display: inline-block;
   position: relative;
@@ -85,10 +94,11 @@
   height: 3rem;
   text-align: center;
   border: #dee2e6;
-  border-radius: 50%;
+  border-radius: 100%;
   background: #fff;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   line-height: 3rem;
+  object-fit: cover;
 }
 .activity-card-body {
     overflow: auto;
@@ -96,7 +106,7 @@
     margin-bottom: 2rem;
     padding-bottom: 1rem;
   }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1140px) {
   .activity-section {
     width: 25%;
   }
@@ -105,24 +115,17 @@
     min-height: 100%;
   }
   .activity-card-adjust-height-xl .activity-card {
-    height: calc(100% - 24px);
+    /* height: calc(100% - 24px); */
     max-height: none;
   }
   .activity-card-body {
     overflow: auto;
     height: calc(100% - 70px);
     margin-bottom: 2rem;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
   }
 }
 
-@media only screen and (min-width: 576px) {
-}
-@media only screen and (min-width: 992px) {
-  .activity-section {
-    width: 25%;
-  }
-}
 @media only screen and (max-width: 991px) {
    
       .activity-card-adjust-height-xl .activity-card {

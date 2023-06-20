@@ -2,9 +2,10 @@ import React from "react";
 import "./contact.css";
 import contactData from "./../../components/latestActivity/activity.json";
 import { Link } from "react-router-dom";
+import Reveal from "../../components/animations/Reveal";
 const Contact = () => {
   return (
-    <div className=" px-4 xl:px-5 pt-12">
+    <div className=" pt-12">
       <div className="page-breadcrumb mb-8 px-3">
         <p>
           {" "}
@@ -20,8 +21,9 @@ const Contact = () => {
       <div className="row flex flex-wrap gap-4">
         {contactData.map((data) => (
           <div className="item " key={data.id}>
-            <div className="card mb-4 px-2 cursor-pointer">
-              <div className="card-body p-6">
+          <Reveal>
+            <div className="contact-card mb-4 px-2 cursor-pointer">
+              <div className="contact-card-body p-6">
                 <div className="flex  gap-8 items-center">
                   <img src={data.img} className="avatar " alt="" />
                   <div className="text-[#343a40] ">
@@ -43,6 +45,7 @@ const Contact = () => {
                 </div>
               </div>
             </div>
+          </Reveal>
           </div>
         ))}
       </div>
