@@ -1,24 +1,26 @@
-import React from 'react'
-import Monitor from '../../components/monitor/Monitor'
-import LatestActivity from '../../components/latestActivity/LatestActivity'
-import Sales from '../../components/Sales/Sales'
 import Chart from '../../components/Charts/Chart'
 import ChartCard from '../../components/Charts/ChartCard'
+import React from "react";
+import Monitor from "../../components/monitor/Monitor";
+import LatestActivity from "../../components/latestActivity/LatestActivity";
+import Sales from "../../components/Sales/Sales";
+import Contact_table from "../../components/contact_table/Contact_table";
+import Reveal from "../../components/animations/Reveal";
 
 const Dashboard = () => {
   return (
     <>
-      <Monitor/>
-      <div className="flex md:flex-nowrap flex-wrap mb-5 gap-y-3">
-        <div className="w-full px-3 md:w-3/4 ">
-            <Chart/>
-        </div>
-        <LatestActivity/>
+      <Monitor />
+      <div className="flex">
+        <div className=" w-3/4 h-[100vh]">Chart</div>
+        <LatestActivity />
       </div>
-      <Sales/>
-      <ChartCard/>
+      <Reveal>
+        <Contact_table />
+      </Reveal>
+      <Sales />
     </>
-  )
-}
+  );
+};
 
-export default Dashboard
+export default Dashboard;

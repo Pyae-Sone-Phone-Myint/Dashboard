@@ -5,6 +5,7 @@
 }
 .activity-card {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+
   padding-bottom: 5rem;
   border-radius: 1rem;
   overflow: hidden;
@@ -58,6 +59,7 @@
   overflow: auto;
   background-color: white;
   border-radius: 0.25rem;
+
 }
 .activity-card-body .list-group {
   border-radius: 0.25rem;
