@@ -14,8 +14,8 @@ const ChartCard = () => {
 	const [isMenuThreeOpen, setIsMenuThreeOpen] = useState(false);
 	return (
 		<>
-			<div className=" flex flex-col lg:flex-row gap-4 mb-10">
-				<div className=" w-full lg:w-1/3  shadow-lg bg-white rounded-[1rem] mx-3">
+			<div className=" flex flex-col lg:flex-row gap-4 mb-10 mx-3 overflow-hidden bg-transparent">
+				<div className=" w-full lg:w-1/3  shadow-lg bg-white rounded-[1rem]">
 					<div className=" chart-card-header  flex justify-between">
 						<h2 className="  text-sm font-normal tracking-[.2em] text-[#343a40]   uppercase">
 						PROJECT UPDATES
@@ -145,7 +145,7 @@ const ChartCard = () => {
 				</div>
 				{/* dognut */}
 
-				<div className=" w-full lg:w-1/3  shadow-lg bg-white rounded-[1rem] mx-3">
+				<div className=" w-full lg:w-1/3  shadow-lg bg-white rounded-[1rem]">
 					<div className=" chart-card-header flex justify-between ">
 						<h2 className=" text-sm font-normal tracking-[.2em] text-[#343a40]   uppercase">
 						CLOSED PROJECTS
@@ -184,7 +184,7 @@ const ChartCard = () => {
 					{/* card  */}
 					<div className=" container mx-auto mt-8 flex flex-col  p-5">
 
-						<div className="w-full h-full md:w-[70%] md:h-[70%] lg:w-[50%] px-4 py-2 lg:h-[50%]  mx-auto">
+						<div className="w-full h-full mx-auto">
 							<DoughnutChart />
 						</div>
 						<div className="flex flex-col gap-3 w-full text-center mt-5">
@@ -243,7 +243,7 @@ const ChartCard = () => {
 				</div>
 				{/* pie  */}
 
-				<div className=" w-full lg:w-1/3 shadow-lg bg-white rounded-[1rem] mx-3">
+				<div className=" w-full lg:w-1/3 shadow-lg bg-white rounded-[1rem]">
 					<div className=" chart-card-header flex justify-between">
 						<h2 className=" text-sm font-normal tracking-[.2em] text-[#343a40]  uppercase">
 						TICKETS SOLVED
@@ -281,7 +281,7 @@ const ChartCard = () => {
 				
 					<div className=" container mx-auto mt-8 flex flex-col  p-5 ">
 
-						<div className="w-full h-full md:w-[70%] md:h-[70%] lg:w-[50%] px-4 py-2 lg:h-[50%]  mx-auto">
+						<div className="w-full h-full mx-auto">
 							<PieChart />
 						</div>
 						<div className="flex flex-col gap-3 w-full text-center mt-5">

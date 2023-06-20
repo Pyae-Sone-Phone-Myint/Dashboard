@@ -7,7 +7,7 @@ ChartJS.register(ArcElement, Tooltip);
 const DoughnutChart = () => {
 	return (
 		<>
-			<Doughnut
+			<Doughnut className=" mx-auto"
 				data={{
 					labels: ["Sandra", "Becky", "Julie", "Romero"],
 					datasets: [
@@ -34,7 +34,7 @@ const DoughnutChart = () => {
 				}}
 
 				options={{
-					responsive: true,
+					responsive: false,
 					
 
 				}}

@@ -4,7 +4,7 @@ import Breadcrumbs from "@mui/material/Breadcrumbs";
 // import Link from "@mui/material/Link";
 import "./Knowledge.css";
 import { BiSearch } from "react-icons/bi";
-import { HiOutlineDocumentSearch } from "react-icons/hi";
+import { HiOutlineDocumentSearch, HiOutlinePencil } from "react-icons/hi";
 import { LuLaptop2 } from "react-icons/lu";
 import { AiOutlineFile, AiOutlineMessage } from "react-icons/ai";
 import { TbTargetArrow } from "react-icons/tb";
@@ -386,20 +386,20 @@ const Knowledge = () => {
               </div>
             </div>
           </div>
-          <div className=" relative pb-[230px]  py-20 flex items-center justify-center  bg-[#c8c8c830]">
+          <div className=" relative h-[350px]  py-20 flex items-center justify-center  bg-[#c8c8c830]">
             <div
               className=" absolute -top-10 flex flex-col shadow-2xl bg-white overflow-hidden w-[95%] gap-8 rounded-2xl lg:w-[33%]"
               style={{ boxShadow: "1px 1px 15px #e0e0e0" }}
             >
-              <div className="flex  items-center px-8 border-b justify-between py-4">
-                <div className="flex flex-col">
-                  <div className=" tracking-widest text-[#4650dd]">
+              <div className="flex  items-center px-8 border-b justify-between py-5">
+                <div className="flex flex-col ">
+                  <div className=" tracking-widest text-[#4650dd] text-sm mb-1">
                     DROP US A LINE
                   </div>
-                  <h1 className=" text-gray-700 text-3xl font-bold">Contact</h1>
+                  <h1 className=" text-gray-700 text-2xl font-bold">Contact</h1>
                 </div>
                 <div>
-                  <RiBallPenLine size={"4rem"} />
+                  <HiOutlinePencil size={"3rem"} />
                 </div>
               </div>
               <div className=" px-8 text-gray-500">

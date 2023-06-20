@@ -5,10 +5,11 @@ import { NavLink, Navigate, useNavigate } from "react-router-dom";
 import { BsFillLayersFill } from "react-icons/bs";
 import { MdKeyboardArrowLeft } from "react-icons/md";
 import { Card, Accordion, AccordionBody } from "@material-tailwind/react";
+import { BiLogOut } from "react-icons/bi";
 
 const Sidebar = ({ sidebar, mOpen }) => {
   const [open, setOpen] = useState(0);
-  const nav = useNavigate()
+  const nav = useNavigate();
 
   const handleOpen = (value) => {
     setOpen(open === value ? 0 : value);
@@ -16,9 +17,7 @@ const Sidebar = ({ sidebar, mOpen }) => {
   return (
     <>
       <div
-        className={` sidebar h-auto ${sidebar && "shrink"} shadow-lg ${
-          mOpen && "open"
-        }`}
+        className={` sidebar h-auto ${sidebar && "shrink"}  ${mOpen && "open"}`}
       >
         <div className={``}>
           <h1
@@ -64,7 +63,7 @@ const Sidebar = ({ sidebar, mOpen }) => {
             </div>
             <AccordionBody className="py-0 mx-0">
               <div className={` ${!sidebar && "text-center"} sidebar-list`}>
-                <NavLink to={"/pages"} className="sidebar-link text-[.75rem]">
+                <NavLink to={"/profile"} className="sidebar-link text-[.75rem]">
                   Profile
                 </NavLink>
                 <NavLink
@@ -92,13 +91,22 @@ const Sidebar = ({ sidebar, mOpen }) => {
             </AccordionBody>
           </Accordion>
           <div
-            className=" cursor-pointer sidebar-link"
+            className={`cursor-pointer sidebar-link flex items-center ${
+              !sidebar && "flex-col"
+            }`}
             onClick={() => {
               localStorage.removeItem("token");
-              nav('/login')
+              nav("login");
             }}
           >
-            Logout
+            <BiLogOut size={"1.3rem"} />
+            <h4
+              className={` sidebar-title ${
+                !sidebar ? "ms-0 text-[0.75rem]" : "ms-3"
+              }`}
+            >
+              Logout
+            </h4>
           </div>
         </div>
       </div>

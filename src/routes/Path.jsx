@@ -7,6 +7,7 @@ import Navbar from "../components/Navbar/Navbar";
 import RouteGuard from "./RouteGuard";
 import Home from "./Home";
 import Auth from "./Auth";
+import NotFound from "../components/notFound/NotFound";
 
 
 const Path = () => {
@@ -38,6 +39,8 @@ const Path = () => {
             </Auth>
           }
         />
+
+        <Route element={<NotFound/>}/>
 
       </Routes>
     </>

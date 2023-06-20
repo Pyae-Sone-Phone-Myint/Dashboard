@@ -11,7 +11,7 @@ const Monitor = () => {
       <div className="page-header">
         <h1 className=" header ">Default Dashboard</h1>
       </div>
-      <Reveal>
+      <Reveal value={100}>
       <div className="monitor-card-row flex flex-wrap">
         {monitorData.map((data) => {
           return (

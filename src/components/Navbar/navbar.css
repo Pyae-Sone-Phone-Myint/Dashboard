@@ -67,7 +67,7 @@
   z-index: 100;
 }
 
-.dropdown-menu {
+.dropdown-menu-item {
   display: none;
   position: absolute;
   right: 0;
@@ -80,16 +80,16 @@
   animation: dropdownAnimation 0.5s ease;
 }
 
-.dropdown-toggle:focus + .dropdown-menu,
-.dropdown-toggle:active + .dropdown-menu {
+.dropdown-toggle:focus + .dropdown-menu-item,
+.dropdown-toggle:active + .dropdown-menu-item {
   display: block;
 }
 
-.search-input:focus .search-box .dropdown-menu {
+.search-input:focus .search-box .dropdown-menu-item {
   display: block;
 }
 
-/* .dropdown-menu.show {
+/* .dropdown-menu-item.show {
     display: block;
 } */
 .dropdown-list {

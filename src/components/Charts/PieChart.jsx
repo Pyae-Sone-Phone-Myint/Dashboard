@@ -7,7 +7,7 @@ ChartJS.register(ArcElement, Tooltip,);
 const PieChart = () => {
 	return (
 		<>
-			<Pie
+			<Pie className=" mx-auto"
 				data={{
 					labels: ["John", "Danny", "Frank", "Mark"],
 					datasets: [
@@ -23,7 +23,7 @@ const PieChart = () => {
 				}}
 				
 				options={{
-					responsive: true,
+					responsive: false,
 				}}
 			/>
 		</>
