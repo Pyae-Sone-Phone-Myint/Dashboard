@@ -83,7 +83,7 @@ const Row = () => {
             </td>
             <td className="ps-10 flex child my-[40px] justify-center items-center gap-3">
               <div>{data.contract}%</div>
-              <div className="flex-start progress flex h-1.5 w-full overflow-hidden bg-gray-100 rounded-sm bg-blue-gray-50 font-sans text-xs font-medium">
+              <div className="flex-start progress flex h-1.5 w-full overflow-hidden bg-gray-100 rounded-sm font-sans text-xs font-medium">
                 <div
                   className="flex h-full items-baseline justify-center overflow-hidden break-all bg-[#4650dd] text-white"
                   style={{ width: data.contract + "%" }}
