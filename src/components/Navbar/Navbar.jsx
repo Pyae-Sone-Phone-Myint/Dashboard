@@ -378,7 +378,7 @@ const Navbar = () => {
       {/* Sidebar */}
       <div className="flex">
         <Sidebar sidebar={sidebar} mOpen={!sidebar} />
-        <div className=" w-full">
+        <div className=" xl:w-full  min-w-[82%] ">
           <div className=" w-full md:p-10 bg-[#f8f9fa]">
             <Routes>
               <Route path="/" element={<Dashboard />} />
