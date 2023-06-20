@@ -1,7 +1,7 @@
 import React from "react";
 import "./Chart.css";
 import DoughnutChart from "./DoughnutChart";
-import { BiUpArrowAlt } from "react-icons/bi";
+
 import { BsDot } from "react-icons/bs";
 import PieChart from "./PieChart";
 

@@ -98,7 +98,7 @@ const Chart = () => {
 								</span>
 							</div>
 						</div>
-						<div className="  lg:hidden w-[5rem] h-[5rem] flex justify-center items-center bg-[#dadcf8] rounded-full">
+						<div className="mobile-img md:block  lg:hidden w-[5rem] h-[5rem] flex justify-center items-center bg-[#dadcf8] rounded-full">
 							<RiHandCoinLine className=" text-4xl text-[#4650dd]" />
 						</div>
 					</div>
@@ -122,13 +122,15 @@ const Chart = () => {
 					</div>
 				</div>
 				<div className="w-full lg:w-1/3">
+					
 					{/* header */}
-					<div className=" p-5">
+					{/* <div className=" p-5">
 						<h2 className=" text-base font-normal tracking-wider">
 							Latest Activity
 						</h2>	
 					</div>
-					<hr className=" shadow-md" />
+					<hr className=" shadow-md" /> */}
+				
 				</div>
 			</div>
 
