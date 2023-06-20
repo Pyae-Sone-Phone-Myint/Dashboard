@@ -10,7 +10,7 @@ import {
 import { BsFillFileEarmarkPostFill, BsTwitter } from "react-icons/bs";
 import "./navbar.css";
 import Sidebar from "./Sidebar";
-import { Route, Routes } from "react-router-dom";
+import { Outlet, Route, Routes } from "react-router-dom";
 import Monitor from "../monitor/Monitor";
 import Dashboard from "../../pages/Dashboard/Dashboard";
 import Pricing from "../../pages/pricing/Pricing";
@@ -20,10 +20,11 @@ import Knowledge from "../../pages/knowledge/Knowledge";
 
 const Navbar = () => {
   const [sidebar, setSidebar] = useState(true);
+  const token = JSON.parse(localStorage.getItem('token'))
   return (
     <>
       {/* Navbar */}
-      <div className="">
+      {token && <div className="">
         <div className=" select-none shadow-lg sticky top-0 z-50 bg-white">
           <div className=" w-full  flex justify-between p-4  items-center">
             <div
@@ -369,7 +370,13 @@ const Navbar = () => {
                     </div>
                   </a>
                   <hr />
-                  <div className="dropdown-list mt-2">
+                  <div
+                    className="dropdown-list mt-2"
+                    onClick={() => {
+                      console.log('hello')
+                      localStorage.removeItem("token");
+                    }}
+                  >
                     <h1 className="  font-normal text-[rgb(73,80,87)]">
                       Logout
                     </h1>
@@ -387,10 +394,10 @@ const Navbar = () => {
             <div className=" w-full md:p-10 bg-[#f8f9fa]">
               <Routes>
                 <Route path="/" element={<Dashboard />} />
-                <Route path="/pricing-table" element={<Pricing />} />
-                <Route path="/contacts" element={<Contact />} />
-                <Route path="/invoice" element={<Invoice />} />
-                <Route path="/knowledge-base" element={<Knowledge/>} />
+                <Route path="pricing-table" element={<Pricing />} />
+                <Route path="contacts" element={<Contact />} />
+                <Route path="invoice" element={<Invoice />} />
+                <Route path="knowledge-base" element={<Knowledge />} />
               </Routes>
             </div>
             <footer className=" bg-white py-7 px-10">
@@ -400,7 +407,8 @@ const Navbar = () => {
             </footer>
           </div>
         </div>
-      </div>
+      </div>}
+      <Outlet/>
     </>
   );
 };
