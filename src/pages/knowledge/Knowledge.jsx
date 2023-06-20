@@ -16,7 +16,7 @@ const Knowledge = () => {
     <>
       <div className="">
         {/* Knowledge_base */}
-        <div className="bg-[#F8F9FA]  px-3 lg:px-10 py-10 mb-20">
+        <div className="bg-[#F8F9FA]  px-3 lg:px-10 py-5 mb-20">
           <div role="presentation" className=" mb-8">
             <Breadcrumbs aria-label="breadcrumb">
               <Link
@@ -127,14 +127,14 @@ const Knowledge = () => {
             </div>
             <div className="">
               <a
-                href="/home/knowledge"
+                href="#"
                 className=" hover:underline text-gray-500 font-semibold"
               >
                 See all topics {">>"}
               </a>
             </div>
           </div>
-          <div className=" flex flex-wrap gap-8">
+          <div className=" flex flex-wrap gap-10">
             <div>
               <div className=" flex items-center gap-2">
                 <span className="border bg-[#dadcf8] text-[#4650dd] px-2 py-1 rounded-md">
@@ -157,7 +157,7 @@ const Knowledge = () => {
                   className=" flex items-center gap-2 ps-5 hover:underline text-gray-500"
                 >
                   <AiOutlineFile />
-                  Adipisicing voluptate magna quis sunt dolor velit.
+                  Adipisicing voluptate magna quis <br/> sunt dolor velit.
                 </a>
                 <a
                   href="/notFound"
@@ -197,7 +197,7 @@ const Knowledge = () => {
                   className=" flex items-center gap-2 ps-5 hover:underline text-gray-500"
                 >
                   <AiOutlineFile />
-                  Adipisicing voluptate magna quis sunt dolor velit.
+                  Adipisicing voluptate magna quis <br/> sunt dolor velit.
                 </a>
                 <a
                   href="/notFound"
@@ -237,7 +237,7 @@ const Knowledge = () => {
                   className=" flex items-center gap-2 ps-5 hover:underline text-gray-500"
                 >
                   <AiOutlineFile />
-                  Adipisicing voluptate magna quis sunt dolor velit.
+                  Adipisicing voluptate magna quis <br/> sunt dolor velit.
                 </a>
                 <a
                   href="/notFound"
@@ -277,7 +277,7 @@ const Knowledge = () => {
                   className=" flex items-center gap-2 ps-5 hover:underline text-gray-500"
                 >
                   <AiOutlineFile />
-                  Adipisicing voluptate magna quis sunt dolor velit.
+                  Adipisicing voluptate magna quis <br/> sunt dolor velit.
                 </a>
                 <a
                   href="/notFound"
@@ -317,7 +317,7 @@ const Knowledge = () => {
                   className=" flex items-center gap-2 ps-5 hover:underline text-gray-500"
                 >
                   <AiOutlineFile />
-                  Adipisicing voluptate magna quis sunt dolor velit.
+                  Adipisicing voluptate magna quis <br/> sunt dolor velit.
                 </a>
                 <a
                   href="/notFound"
@@ -416,11 +416,7 @@ const Knowledge = () => {
             </div>
           </div>
         </div>
-        {/* footer */}
-        <div className=" flex py-5 bg-white shadow-lg px-10 justify-between">
-          <div className=" font-bold">Your company © 2023</div>
-          <div className=" text-gray-400">Version 1.3.2</div>
-        </div>
+       
       </div>
     </>
   );

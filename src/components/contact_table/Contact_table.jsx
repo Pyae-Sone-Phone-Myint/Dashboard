@@ -13,12 +13,12 @@ const Contact_table = () => {
   const dispatch = useDispatch();
   return (
     <>
-      <div className="w-full my-20 mx-auto  rounded-xl table_shadow bg-[#F8F9FA] px-3">
+      <div className="w-full my-20 mx-auto  rounded-xl   table_shadow bg-[#F8F9FA]">
         {/* contact_title */}
-        <div className=" w-[100%] py-[32px] flex tracking-[0.3rem] relative rounded-t-xl bg-white shadow items-center justify-between ps-10 pe-5">
-          <h1 className=" text-xl">LATEST CONTRACTS</h1>
-          <button className="  hover:bg-[#4752ea61] dropdown_icon rounded-full p-2 text-gray-400 hover:text-[#4650dd] ">
-            <BiDotsVerticalRounded className="" size={"2rem"} />
+        <div className="  py-[20px]  flex tracking-[0.3rem] relative ps-5 pe-0 lg:ps-10 lg:pe-2 rounded-t-xl bg-white shadow items-center justify-between ">
+          <h1 className=" text-lg">LATEST CONTRACTS</h1>
+          <button className=" hover:bg-[#4752ea61] dropdown_icon rounded-full p-2 text-gray-400 hover:text-[#4650dd] ">
+            <BiDotsVerticalRounded className="" size={"1.7rem"} />
           </button>
           <div
             className=" absolute rounded-lg z-20 right-9 dropdown tracking-normal bottom-[-140px] bg-white"
@@ -45,11 +45,11 @@ const Contact_table = () => {
           </div>
         </div>
         {/* contact_nav */}
-        <div className="flex px-10 py-8 items-center lg:items-start flex-col lg:flex-row justify-between gap-4 lg:justify-start">
-          <div className="w-full lg:w-[50%] flex gap-3 lg:gap-5 lg:justify-start justify-between">
+        <div className="flex ps-5 lg:ps-10 pe-5 lg:pe-6 w-full py-8 items-center lg:items-start flex-col lg:flex-row  gap-4 justify-start lg:justify-between">
+          <div className="w-full  flex gap-3 lg:gap-5 lg:justify-start justify-between">
             <select
               id=""
-              className=" border px-4 text-[18px] py-[5px] border-gray-300 rounded"
+              className=" border px-4 text-[13px] py-[4px]  border-gray-300 rounded"
             >
               <option value="Bulk Action" className="">
                 Bulk Action
@@ -58,13 +58,13 @@ const Contact_table = () => {
                 Delete
               </option>
             </select>
-            <button className="px-3 rounded border text-[18px] apply_btn border-[#4650dd]">
+            <button className="px-3 rounded border text-[13px] apply_btn border-[#4650dd]">
               Apply
             </button>
             <select
               onClick={(e) => dispatch(increaseLimit(e.target.value))}
               id=""
-              className=" border px-4 text-[18px] py-[5px] border-gray-300 rounded"
+              className=" border px-4 text-[15px] py-[4px] border-gray-300 rounded"
             >
               <option value={5}>5</option>
               <option value={10}>10</option>
@@ -72,13 +72,13 @@ const Contact_table = () => {
               <option value={20}>20</option>
               <option value={25}>25</option>
             </select>
-            <span className=" my-auto text-xl">entries per page</span>
+            <span className=" my-auto text-sm">entries per page</span>
           </div>
           <div className=" w-full flex justify-end ms-auto lg:w-[40%]">
             <input
               onChange={(e) => dispatch(find(e.target.value))}
               type="text"
-              className=" border border-gray-300 rounded-lg  py-[5px] text-xl w-full lg:w-[40%] outline-none ps-3"
+              className=" border border-gray-300 w-full rounded-lg  py-[3px] text-md outline-none ps-3"
               placeholder="Search..."
             />
           </div>
@@ -88,59 +88,69 @@ const Contact_table = () => {
           <table className=" w-full border">
             <thead className="bg-[#343A40]">
               <tr className=" w-full justify-between">
-                <th className=" relative tracking-widest  ps-10 py-8 text-white text-xl text-start">
-                  NAME
-                  <div className=" absolute right-0 top-[20%] text-gray-300 flex flex-col">
-                    <button>
-                      <MdKeyboardArrowUp size={"1.5rem"} />
-                    </button>
-                    <button>
-                      <MdKeyboardArrowDown size={"1.5rem"} />
-                    </button>
+                <th className=" ps-10 py-2 ">
+                  <div className="  tracking-widest text-white text-sm text-start flex items-center justify-between">
+                    NAME
+                    <div className="  text-gray-300 flex flex-col">
+                      <button>
+                        <MdKeyboardArrowUp size={"1.5rem"} />
+                      </button>
+                      <button>
+                        <MdKeyboardArrowDown size={"1.5rem"} />
+                      </button>
+                    </div>
                   </div>
                 </th>
-                <th className="relative tracking-widest ps-10 py-8 text-white text-xl text-start">
-                  COMPANY
-                  <div className=" absolute right-0 top-[20%] text-gray-300 flex flex-col">
-                    <button>
-                      <MdKeyboardArrowUp size={"1.5rem"} />
-                    </button>
-                    <button>
-                      <MdKeyboardArrowDown size={"1.5rem"} />
-                    </button>
+                <th className="  ps-5 py-2 ">
+                  <div className=" tracking-widest flex items-center justify-between text-white text-sm text-start">
+                    COMPANY
+                    <div className=" flex flex-col my-auto text-gray-300">
+                      <button>
+                        <MdKeyboardArrowUp size={"1.5rem"} />
+                      </button>
+                      <button>
+                        <MdKeyboardArrowDown size={"1.5rem"} />
+                      </button>
+                    </div>
                   </div>
                 </th>
-                <th className="relative tracking-widest ps-10 py-8 text-white text-xl text-start">
-                  STATUS
-                  <div className=" absolute right-0 top-[20%] text-gray-300 flex flex-col">
-                    <button>
-                      <MdKeyboardArrowUp size={"1.5rem"} />
-                    </button>
-                    <button>
-                      <MdKeyboardArrowDown size={"1.5rem"} />
-                    </button>
+                <th className=" ps-5 py-2 ">
+                  <div className="flex items-center justify-between  tracking-widest text-white text-sm text-start">
+                    STATUS
+                    <div className="  text-gray-300 flex flex-col">
+                      <button>
+                        <MdKeyboardArrowUp size={"1.5rem"} />
+                      </button>
+                      <button>
+                        <MdKeyboardArrowDown size={"1.5rem"} />
+                      </button>
+                    </div>
                   </div>
                 </th>
-                <th className="relative tracking-widest ps-10 py-8 text-white text-xl text-start">
-                  CONTRACT
-                  <div className=" absolute right-0 top-[20%] text-gray-300 flex flex-col">
-                    <button>
-                      <MdKeyboardArrowUp size={"1.5rem"} />
-                    </button>
-                    <button>
-                      <MdKeyboardArrowDown size={"1.5rem"} />
-                    </button>
+                <th className="  ps-5 py-2 text-white ">
+                  <div className="tracking-widest text-sm flex items-center justify-between">
+                    CONTRACT
+                    <div className="  text-gray-300 flex flex-col">
+                      <button>
+                        <MdKeyboardArrowUp size={"1.5rem"} />
+                      </button>
+                      <button>
+                        <MdKeyboardArrowDown size={"1.5rem"} />
+                      </button>
+                    </div>
                   </div>
                 </th>
-                <th className="relative tracking-widest ps-10 py-8 text-white text-xl text-start">
-                  DATE
-                  <div className=" absolute right-5 top-[20%] text-gray-300 flex flex-col">
-                    <button>
-                      <MdKeyboardArrowUp size={"1.5rem"} />
-                    </button>
-                    <button>
-                      <MdKeyboardArrowDown size={"1.5rem"} />
-                    </button>
+                <th className="  ps-10 pe-5 py-2 text-white ">
+                  <div className=" tracking-widest text-sm text-start flex items-center justify-between">
+                    DATE
+                    <div className=" text-gray-300 flex flex-col">
+                      <button>
+                        <MdKeyboardArrowUp size={"1.5rem"} />
+                      </button>
+                      <button>
+                        <MdKeyboardArrowDown size={"1.5rem"} />
+                      </button>
+                    </div>
                   </div>
                 </th>
               </tr>

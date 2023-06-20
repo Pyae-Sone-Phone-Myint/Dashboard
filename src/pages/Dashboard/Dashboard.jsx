@@ -13,15 +13,17 @@ const Dashboard = () => {
       <Monitor />
       <div className="flex flex-col md:flex-row gap-y-3">
         <div className=" md:w-3/4 w-full px-3">
-          <Chart/>
+          <Chart />
         </div>
         <LatestActivity />
       </div>
       <Reveal>
-        <Contact_table />
+        <div className=' px-3 rounded-xl'>
+          <Contact_table />
+        </div>
       </Reveal>
       <Sales />
-      <ChartCard/>
+      <ChartCard />
     </>
   );
 };

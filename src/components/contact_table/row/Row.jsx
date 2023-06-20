@@ -39,19 +39,19 @@ const Row = () => {
             className=" border-b parents hover:bg-[#ECECEC] bg-white relative"
             key={data.id}
           >
-            <td className="ps-10 py-4 text-xl ">
-              <div className=" flex gap-5 items-center">
+            <td className="ps-10 py-2 text-sm ">
+              <div className=" flex gap- gap-4 items-center">
                 {data?.image !== "" ? (
-                  <div className=" bg-white p-2 rounded-full shadow-xl">
+                  <div className=" bg-white p-1  rounded-full shadow-xl">
                     <img
                       src={`${data.image}`}
-                      className=" w-14 rounded-full"
+                      className=" w-10 rounded-full"
                       alt=""
                     />
                   </div>
                 ) : (
-                  <div className=" bg-white p-2 rounded-full shadow-xl">
-                    <div className=" w-14 h-14 text-center rounded-full bg-gray-300 flex items-center justify-center">
+                  <div className=" bg-white p-1  rounded-full shadow-xl">
+                    <div className=" w-10 h-10 text-center rounded-full bg-gray-300 flex items-center justify-center">
                       {data.image_name}
                     </div>
                   </div>
@@ -62,13 +62,13 @@ const Row = () => {
                 </div>
               </div>
             </td>
-            <td className="ps-10 py-4">
-              <div className=" text-lg font-bold">{data.company_name}</div>
-              <div className=" text-lg text-gray-400">{data.company_type}</div>
+            <td className="ps-5 py-2">
+              <div className=" text-sm font-bold">{data.company_name}</div>
+              <div className=" text-sm text-gray-400">{data.company_type}</div>
             </td>
-            <td className="ps-10 py-4">
+            <td className="ps-5 py-2">
               <span
-                className={` px-2 py-[3px] rounded-lg text-sm`}
+                className={` px-2 py-[2px] rounded text-[11px]`}
                 style={{
                   color: data.status_color,
                   backgroundColor: data.status_bg_color,
@@ -81,21 +81,21 @@ const Row = () => {
                 <span className=" ps-2 "> {data.status}</span>
               </span>
             </td>
-            <td className="ps-10 flex child my-[40px] justify-center items-center gap-3">
-              <div>{data.contract}%</div>
-              <div className="flex-start progress flex h-1.5 w-full overflow-hidden bg-gray-100 rounded-sm font-sans text-xs font-medium">
+            <td className="ps-5 flex child py-2 my-[20px] justify-center items-center gap-3">
+              <div className=" text-sm">{data.contract}%</div>
+              <div className="flex-start progress flex h-1 w-full overflow-hidden bg-gray-100 rounded-sm font-sans text-xs font-medium">
                 <div
                   className="flex h-full items-baseline justify-center overflow-hidden break-all bg-[#4650dd] text-white"
                   style={{ width: data.contract + "%" }}
                 ></div>
               </div>
             </td>
-            <td className=" ps-10 py-4">
+            <td className=" ps-10 py-2">
               <div className=" relative flex items-center justify-between pe-5">
                 {" "}
-                <div>{data.date}</div>
-                <button className="row_btn hover:bg-[#4752ea61] focus:bg-[#4752ea61] rounded-full p-2 text-gray-400 hover:text-[#4650dd] focus:text-[#4650dd] ">
-                  <BiDotsVerticalRounded className="" size={"2rem"} />
+                <div className=" text-[14px]">{data.date}</div>
+                <button className="row_btn hover:bg-[#4752ea61] focus:bg-[#4752ea61] rounded-full p-1 text-gray-400 hover:text-[#4650dd] focus:text-[#4650dd] ">
+                  <BiDotsVerticalRounded className="" size={"1.5rem"} />
                 </button>
                 <div
                   className=" absolute rounded-lg z-20 right-5 row_dropdown tracking-normal bottom-[-140px] bg-white"
@@ -124,9 +124,9 @@ const Row = () => {
         );
       })}
       <tr>
-        <td className=" px-8 py-10 border" colSpan={5}>
+        <td className=" px-8 py-8 border" colSpan={5}>
           <div className=" w-full flex items-center justify-between">
-            <div className=" text-xl">
+            <div className=" text-sm">
               Showing {contact_start} to {contact_end} of {contact_qty} entries
             </div>
             <div>
