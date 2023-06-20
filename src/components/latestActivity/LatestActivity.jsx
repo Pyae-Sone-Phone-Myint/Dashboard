@@ -15,11 +15,11 @@ const LatestActivity = () => {
       <div className=" activity-card-adjust-height-xl ">
         <div className="activity-card">
           <div className="activity-card-header flex justify-between items-center">
-            <div className="card-heading">Latest Activity</div>
+            <div className=" activity-heading">Latest Activity</div>
             <div className=" relative">
               <button
                 onClick={dropdownToggle}
-                className=" rounded-full hover:text-[#4650dd] focus:text-[#4650dd] duration-200 hover:bg-[#dadcf8] focus:bg-[#dadcf8]  w-8 h-8 font-[900]"
+                className=" rounded-full hover:text-[#4650dd] focus:text-[#4650dd] duration-200 hover:bg-[#dadcf8] focus:bg-[#dadcf8]    w-8 h-8 font-[900]"
               >
                 <BiDotsVerticalRounded className=" left-1/2 translate-x-1/2 text-[#495057] " />
               </button>
@@ -47,10 +47,14 @@ const LatestActivity = () => {
             <div className="list-group">
               {activitiesData.map((data) => (
                 <div className="list-group-item">
-                  <div className="flex gap-2 ">
-                    <div className="  w-auto">
-                      <img className="p-1 mr-2 avatar" src={data.img} alt="" />
-                    </div>
+                  <div className="flex gap-2 items-start">
+                  <div className=" p-1 rounded-full overflow-hidden shadow-lg w-16">
+                  <img
+                    src={data.img}
+                    alt=""
+                    className=" rounded-full"
+                  />
+                </div>
                     <div className=" w-full  text-sm pl-2 ">
                       <p className="">
                         {" "}

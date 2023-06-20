@@ -37,7 +37,7 @@ const Register = () => {
                 </form>
               </div>
               <div className=" px-12 py-5 bg-[rgba(0,0,0,0.03)] text-[.7875rem]">
-                Already have an account? <a href="/register" className=" text-primary hover:underline">Login</a>
+                Already have an account? <a href="/login" className=" text-primary hover:underline">Login</a>
               </div>
             </div>
           </div>

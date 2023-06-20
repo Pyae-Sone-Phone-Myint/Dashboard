@@ -4,7 +4,7 @@ import contactData from "./../../components/latestActivity/activity.json";
 import { Link } from "react-router-dom";
 const Contact = () => {
   return (
-    <div className=" px-4 xl:px-5 pt-12">
+    <div className=" pt-12">
       <div className="page-breadcrumb mb-8 px-3">
         <p>
           {" "}
