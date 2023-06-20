@@ -28,6 +28,7 @@
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+  white-space: nowrap;
 }
 .activity-section .dropdown-menu {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);

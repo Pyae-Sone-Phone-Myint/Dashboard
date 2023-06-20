@@ -12,7 +12,7 @@ const ChartCard = () => {
 				<div className=" w-full lg:w-1/3 p-5 shadow-lg">
 					<div className=" p-5">
 						<h2 className=" text-base font-normal tracking-wider">
-							Latest Activity
+						PROJECT UPDATES
 						</h2>
 					</div>
 					<hr className=" shadow-md" />
@@ -100,7 +100,7 @@ const ChartCard = () => {
 				<div className=" w-full lg:w-1/3 p-5 shadow-lg">
 					<div className=" p-5">
 						<h2 className=" text-base font-normal tracking-wider">
-							Latest Activity
+						CLOSED PROJECTS
 						</h2>
 					</div>
 					<hr className=" shadow-md" />
@@ -166,7 +166,7 @@ const ChartCard = () => {
 				<div className=" w-full lg:w-1/3 p-5 shadow-lg">
 					<div className=" p-5">
 						<h2 className=" text-base font-normal tracking-wider">
-							Latest Activity
+						TICKETS SOLVED
 						</h2>
 					</div>
 					<hr className=" shadow-md" />

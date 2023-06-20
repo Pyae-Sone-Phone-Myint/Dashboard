@@ -13,7 +13,7 @@ const Contact_table = () => {
   const dispatch = useDispatch();
   return (
     <>
-      <div className="w-full my-20 mx-auto  rounded-xl table_shadow bg-[#F8F9FA]">
+      <div className="w-full my-20 mx-auto  rounded-xl table_shadow bg-[#F8F9FA] px-3">
         {/* contact_title */}
         <div className=" w-[100%] py-[32px] flex tracking-[0.3rem] relative rounded-t-xl bg-white shadow items-center justify-between ps-10 pe-5">
           <h1 className=" text-xl">LATEST CONTRACTS</h1>
