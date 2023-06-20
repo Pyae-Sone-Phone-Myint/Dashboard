@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import "./invoice.css";
 import ReactToPrint from "react-to-print";
+import Reveal from "../../components/animations/Reveal";
 const Invoice = () => {
   const componentRef = useRef();
   const handlePrint = () => {
@@ -36,8 +37,9 @@ const Invoice = () => {
             <button className="btn pay-btn">Pay</button>
           </div>
         </div>
+         <Reveal>
         <div className="card  mb-12">
-          <div className="p-12" ref={componentRef}>
+         <div className="p-12" ref={componentRef}>
             <div className=" w-full text-end ">
               <p className=" inline-block px-2 py-1 rounded-[0.25rem] text-xs text-white bg-[#dc3545]">
                 Overdue
@@ -130,6 +132,7 @@ const Invoice = () => {
             </div>
           </div>
         </div>
+         </Reveal>
       </div>
     </div>
   );

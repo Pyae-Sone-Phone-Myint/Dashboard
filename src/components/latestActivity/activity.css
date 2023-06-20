@@ -5,13 +5,14 @@
 }
 .activity-card {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+
   padding-bottom: 5rem;
   border-radius: 1rem;
   overflow: hidden;
 }
 .activity-card-header {
   position: relative;
-  padding: 2rem 2rem;
+  padding: 2rem;
   border-bottom: none;
   background-color: #fff;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
@@ -20,7 +21,7 @@
 .activity-card-header:firscardtrt-child {
   border-radius: calc(1rem - 1px) calc(1rem - 1px) 0 0;
 }
-.card-heading {
+.activity-heading {
   margin-bottom: 0;
   font-size: 0.9rem;
   font-weight: 400;
@@ -57,6 +58,7 @@
   overflow: auto;
   background-color: white;
   border-radius: 0.25rem;
+
 }
 .activity-card-body .list-group {
   border-radius: 0.25rem;

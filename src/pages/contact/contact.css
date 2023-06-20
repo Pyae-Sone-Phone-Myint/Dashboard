@@ -23,12 +23,19 @@
   line-height: 3rem;
   padding: 0.25rem;
 }
-.card {
+.contact-card {
   border: none;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+
+
   height: 100%;
-  border-radius: 1rem;
+  /* border-radius: 1rem; */
 }
+.contact-card-body{
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  border-radius: 1rem;
+  background: #fff;
+}
+
 .item {
   width: 100%;
 }
