@@ -2,6 +2,7 @@
   padding-right: calc(1.5rem * 0.5);
   padding-left: calc(1.5rem * 0.5);
   width: 100%;
+   
 }
 .activity-card {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
@@ -13,7 +14,7 @@
 }
 .activity-card-header {
   position: relative;
-  padding: 1rem 2rem;
+  padding: 2rem 2rem 1.5rem 2rem;
   border-bottom: none;
   background-color: #fff;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);

@@ -11,18 +11,19 @@ const LatestActivity = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
   return (
-    <div className="activity-section">
-      <div className=" activity-card-adjust-height-xl  bg-white">
+    <div className="activity-section   rounded-[1rem]">
+      <div className=" activity-card-adjust-height-xl  rounded-[1rem] bg-white">
         <div className="activity-card">
           <div className="activity-card-header flex justify-between items-center">
-            <div className="activity-heading">Latest Activity</div>
+            <div className="activity-heading text-[#343a40]">Latest Activity</div>
             <div className=" relative">
+              
               <button
-                onClick={dropdownToggle}
-                className=" rounded-full hover:text-[#4650dd] focus:text-[#4650dd] duration-200 hover:bg-[#dadcf8] focus:bg-[#dadcf8]    w-8 h-8 font-[900]"
-              >
-                <BiDotsVerticalRounded className=" left-1/2 translate-x-1/2 text-[#495057] " />
-              </button>
+              onClick={dropdownToggle}
+              className="text-gray-400  hover:bg-[#dadcf8] hover:text-[#4650dd] duration-300 w-8 h-8 flex items-center justify-center rounded-full "
+            >
+              <BiDotsVerticalRounded className=" text-2xl" />
+            </button>
               <div
                 className={`dropdown-menu block py-2 w-[150px] duration-200 ease-in-out ${
                   isDropdownOpen ? "opacity-1" : "opacity-0  invisible"
