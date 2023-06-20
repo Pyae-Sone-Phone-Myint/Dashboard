@@ -27,11 +27,11 @@ const ChartCard = () => {
 							<div className="flex items-center  mt-2">
 								<img
 									src="https://d19m59y37dris4.cloudfront.net/bubbly/1-3-2/img/avatar-0.jpg"
-									className="w-12 shadow-md  h-12 profile-img rounded-full border border-4 border-white"
+									className="w-12 shadow-md  h-12 profile-img rounded-full  border-4 border-white"
 								/>
 								<img
 									src="https://d19m59y37dris4.cloudfront.net/bubbly/1-3-2/img/avatar-1.jpg"
-									className="w-12 shadow-md h-12 profile-img rounded-full border border-4 border-white "
+									className="w-12 shadow-md h-12 profile-img rounded-full  border-4 border-white "
 								/>
 							</div>
 						</div>
@@ -44,19 +44,19 @@ const ChartCard = () => {
 							<div className="flex items-center  mt-2">
 								<img
 									src="https://d19m59y37dris4.cloudfront.net/bubbly/1-3-2/img/avatar-1.jpg"
-									className="w-12 shadow-md profile-img h-12 rounded-full border border-4 border-white"
+									className="w-12 shadow-md profile-img h-12 rounded-full  border-4 border-white"
 								/>
 								<img
 									src="https://d19m59y37dris4.cloudfront.net/bubbly/1-3-2/img/avatar-2.jpg"
-									className="w-12 shadow-md h-12 profile-img rounded-full border border-4 border-white "
+									className="w-12 shadow-md h-12 profile-img rounded-full  border-4 border-white "
 								/>
 								<img
 									src="https://d19m59y37dris4.cloudfront.net/bubbly/1-3-2/img/avatar-3.jpg"
-									className="w-12 shadow-md h-12 profile-img rounded-full border border-4 border-white"
+									className="w-12 shadow-md h-12 profile-img rounded-full  border-4 border-white"
 								/>
 								<img
 									src="https://d19m59y37dris4.cloudfront.net/bubbly/1-3-2/img/avatar-4.jpg"
-									className="w-12 shadow-md h-12 profile-img rounded-full border border-4 border-white"
+									className="w-12 shadow-md h-12 profile-img rounded-full border-4 border-white"
 								/>
 							</div>
 						</div>
@@ -69,11 +69,11 @@ const ChartCard = () => {
 							<div className="flex items-center mt-2">
 								<img
 									src="https://d19m59y37dris4.cloudfront.net/bubbly/1-3-2/img/avatar-0.jpg"
-									className="w-12 shadow-md profile-img h-12 rounded-full border border-4 border-white"
+									className="w-12 shadow-md profile-img h-12 rounded-full  border-4 border-white"
 								/>
 								<img
 									src="https://d19m59y37dris4.cloudfront.net/bubbly/1-3-2/img/avatar-1.jpg"
-									className="w-12 shadow-md h-12 profile-img rounded-full border border-4 border-white "
+									className="w-12 shadow-md h-12 profile-img rounded-full  border-4 border-white "
 								/>
 							</div>
 						</div>
@@ -86,11 +86,11 @@ const ChartCard = () => {
 							<div className="flex items-center mt-2">
 								<img
 									src="https://d19m59y37dris4.cloudfront.net/bubbly/1-3-2/img/avatar-0.jpg"
-									className="w-12  profile-img h-12 shadow-md rounded-full border border-4 border-white"
+									className="w-12  profile-img h-12 shadow-md rounded-full  border-4 border-white"
 								/>
 								<img
 									src="https://d19m59y37dris4.cloudfront.net/bubbly/1-3-2/img/avatar-1.jpg"
-									className="w-12 h-12 profile-img shadow-md rounded-full border border-4 border-white "
+									className="w-12 h-12 profile-img shadow-md rounded-full  border-4 border-white "
 								/>
 							</div>
 						</div>

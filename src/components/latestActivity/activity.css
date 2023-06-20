@@ -105,7 +105,7 @@
     margin-bottom: 2rem;
     padding-bottom: 1rem;
   }
-@media only screen and (min-width: 720px) {
+@media only screen and (min-width: 1140px) {
   .activity-section {
     width: 25%;
   }
@@ -125,13 +125,6 @@
   }
 }
 
-@media only screen and (min-width: 576px) {
-}
-@media only screen and (min-width: 992px) {
-  .activity-section {
-    width: 25%;
-  }
-}
 @media only screen and (max-width: 991px) {
    
       .activity-card-adjust-height-xl .activity-card {
