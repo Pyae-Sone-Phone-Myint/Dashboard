@@ -12,7 +12,7 @@ const LatestActivity = () => {
   };
   return (
     <div className="activity-section">
-      <div className=" activity-card-adjust-height-xl ">
+      <div className=" activity-card-adjust-height-xl  bg-white">
         <div className="activity-card">
           <div className="activity-card-header flex justify-between items-center">
             <div className=" activity-heading">Latest Activity</div>

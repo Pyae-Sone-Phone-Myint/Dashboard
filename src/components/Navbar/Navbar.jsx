@@ -388,7 +388,7 @@ const Navbar = () => {
             </Routes>
           </div>
           <footer className=" bg-white py-7 px-10">
-            <h4 className=" text-sm font-bold leading-5 ">
+            <h4 className=" text-[#343a40] text-sm font-bold leading-5 ">
               Your company © 2023
             </h4>
           </footer>
