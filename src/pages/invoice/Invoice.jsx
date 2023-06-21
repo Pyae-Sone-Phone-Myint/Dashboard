@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import "./invoice.css";
 import ReactToPrint from "react-to-print";
 import Reveal from "../../components/animations/Reveal";
+import { Link } from "react-router-dom";
 const Invoice = () => {
   const componentRef = useRef();
   const handlePrint = () => {
@@ -9,22 +10,22 @@ const Invoice = () => {
   };
   return (
     <div className=" bg-[#f8f9fa] invoice">
-      <div className="px-4 xl:px-5 pt-12">
-        <div className="page-breadcrumb mb-8 ">
+      <div className="pt-12">
+        <div className="page-breadcrumb mb-8  px-3">
           <p>
             {" "}
             <span className=" text-[#4650dd] hover:underline duration-150">
-              Home
+            <Link to={'/'}>Home</Link>
             </span>{" "}
             <span className="muted"> / Invoice</span>{" "}
           </p>
         </div>
-        <div className=" mb-12">
-          <h1 className=" header">invoice</h1>
+        <div className=" mb-12 px-3">
+          <h1 className=" invoice-header">invoice</h1>
         </div>
         <div className="row flex mb-12 justify-between items-center">
           <div className="">
-            <p className=" font-bold text-xl">Invoice #20190204</p>
+            <p className=" font-bold text-xl px-3">Invoice #20190204</p>
           </div>
           <div className=" flex gap-2">
             <ReactToPrint
@@ -37,8 +38,9 @@ const Invoice = () => {
             <button className="btn pay-btn">Pay</button>
           </div>
         </div>
-         <Reveal>
-        <div className="card  mb-12">
+         <Reveal >
+       <div className=" py-8 px-4">
+       <div className="card  mb-12 ">
          <div className="p-12" ref={componentRef}>
             <div className=" w-full text-end ">
               <p className=" inline-block px-2 py-1 rounded-[0.25rem] text-xs text-white bg-[#dc3545]">
@@ -132,6 +134,7 @@ const Invoice = () => {
             </div>
           </div>
         </div>
+       </div>
          </Reveal>
       </div>
     </div>

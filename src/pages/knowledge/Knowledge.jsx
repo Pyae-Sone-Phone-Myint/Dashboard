@@ -10,33 +10,33 @@ import { AiOutlineFile, AiOutlineMessage } from "react-icons/ai";
 import { TbTargetArrow } from "react-icons/tb";
 import { Link } from "react-router-dom";
 import { RiBallPenLine } from "react-icons/ri";
+import Reveal from "../../components/animations/Reveal";
 
 const Knowledge = () => {
   return (
     <>
       <div className="">
         {/* Knowledge_base */}
-        <div className="bg-[#F8F9FA]  px-3 lg:px-10 py-5 mb-20">
-          <div role="presentation" className=" mb-8">
-            <Breadcrumbs aria-label="breadcrumb">
-              <Link
-                underline="hover"
-                // color="inherit"
-                to={"/"}
-                className="text-[#4752eafe]"
-              >
-                Home
-              </Link>
-              <Typography className=" text-gray-400">Knowledge Base</Typography>
-            </Breadcrumbs>
+        <div className="bg-[#F8F9FA]  px-3 lg:px-10 py-2 mb-20">
+        <div className="page-breadcrumb mb-8  px-3">
+            <p>
+              {" "}
+              <span className=" text-[#4650dd] hover:underline duration-150">
+                <Link to={'/'}>Home</Link>
+              </span>{" "}
+              <span className="muted"> / Knowledge Base</span>{" "}
+            </p>
           </div>
-          <div
+          <div className=" mb-12 px-3">
+            <h1 className=" invoice-header">  KNOWLEDGE BASE</h1>
+          </div>
+          {/* <div
             className="text-[35px] lg:text-[40px] tracking-[0.4rem] text-gray-700 mb-10"
             style={{ fontWeight: 350 }}
           >
             KNOWLEDGE BASE
-          </div>
-          <p className="w-full lg:w-1/2 mb-10">
+          </div> */}
+          <p className="w-full lg:w-1/2 mb-10 px-3 text-sm text-[#343a40]">
             One morning, when Gregor Samsa woke from troubled dreams, he found
             himself transformed in his bed into a horrible vermin. He lay on his
             armour-like back, and if he lifted his head a little he could see
@@ -56,7 +56,8 @@ const Knowledge = () => {
             </button>
           </div>
           {/* cards */}
-          <div className="w-full flex justify-between  gap-10 lg:gap-0 md:gap-8 flex-wrap">
+         <Reveal>
+         <div className="w-full flex justify-between  gap-10 lg:gap-0 md:gap-8 flex-wrap mb-8">
             <Link
               to={"/notFound"}
               className="w-[100%] md:w-[48%] select-none py-14 bg-white rounded-xl gap-3 lg:w-[24%] shadow cursor-pointer hover:-translate-y-2 ease-linear duration-100 flex flex-col items-center justify-center"
@@ -113,6 +114,7 @@ const Knowledge = () => {
               </p>
             </Link>
           </div>
+         </Reveal>
         </div>
         {/* choose Topic */}
         <div className=" px-3 lg:px-20 mb-20">
@@ -137,14 +139,14 @@ const Knowledge = () => {
           <div className=" flex flex-wrap gap-10">
             <div>
               <div className=" flex items-center gap-2">
-                <span className="border bg-[#dadcf8] text-[#4650dd] px-2 py-1 rounded-md">
+                <span className="border bg-[#dadcf8] text-[#4650dd] px-2 py-1 rounded-md tex-sm">
                   12
                 </span>
-                <a to={"/notFound"} className=" text-2xl font-bold">
+                <a to={"/notFound"} className=" text-lg font-bold text-[#343a40]">
                   Introduction
                 </a>
               </div>
-              <div className=" flex flex-col mt-5 gap-1">
+              <div className=" flex flex-col mt-5 gap-1 text-sm">
                 <a
                   href="/notFound"
                   className=" flex items-center gap-2 ps-5 hover:underline text-gray-500"
@@ -177,14 +179,14 @@ const Knowledge = () => {
             </div>
             <div>
               <div className=" flex items-center gap-2">
-                <span className="border bg-[#dadcf8] text-[#4650dd] px-2 py-1 rounded-md">
+                <span className="border bg-[#dadcf8] text-[#4650dd] px-2 py-1 rounded-md tex-sm">
                   12
                 </span>
-                <a to={"/notFound"} className=" text-2xl font-bold">
-                  Introduction
+                <a to={"/notFound"} className=" text-lg font-bold text-[#343a40]">
+                  Usage
                 </a>
               </div>
-              <div className=" flex flex-col mt-5 gap-1">
+              <div className=" flex flex-col mt-5 gap-1 text-sm">
                 <a
                   href="/notFound"
                   className=" flex items-center gap-2 ps-5 hover:underline text-gray-500"
@@ -217,14 +219,14 @@ const Knowledge = () => {
             </div>
             <div>
               <div className=" flex items-center gap-2">
-                <span className="border bg-[#dadcf8] text-[#4650dd] px-2 py-1 rounded-md">
+                <span className="border bg-[#dadcf8] text-[#4650dd] px-2 py-1 rounded-md tex-sm">
                   12
                 </span>
-                <a to={"/notFound"} className=" text-2xl font-bold">
-                  Introduction
+                <a to={"/notFound"} className=" text-lg font-bold text-[#343a40]">
+                  Renting
                 </a>
               </div>
-              <div className=" flex flex-col mt-5 gap-1">
+              <div className=" flex flex-col mt-5 gap-1 text-sm">
                 <a
                   href="/notFound"
                   className=" flex items-center gap-2 ps-5 hover:underline text-gray-500"
@@ -257,14 +259,14 @@ const Knowledge = () => {
             </div>
             <div>
               <div className=" flex items-center gap-2">
-                <span className="border bg-[#dadcf8] text-[#4650dd] px-2 py-1 rounded-md">
+                <span className="border bg-[#dadcf8] text-[#4650dd] px-2 py-1 rounded-md tex-sm">
                   12
                 </span>
-                <a to={"/notFound"} className=" text-2xl font-bold">
-                  Introduction
+                <a to={"/notFound"} className=" text-lg font-bold text-[#343a40]">
+                  Fee
                 </a>
               </div>
-              <div className=" flex flex-col mt-5 gap-1">
+              <div className=" flex flex-col mt-5 gap-1 text-sm">
                 <a
                   href="/notFound"
                   className=" flex items-center gap-2 ps-5 hover:underline text-gray-500"
@@ -297,14 +299,14 @@ const Knowledge = () => {
             </div>
             <div>
               <div className=" flex items-center gap-2">
-                <span className="border bg-[#dadcf8] text-[#4650dd] px-2 py-1 rounded-md">
+                <span className="border bg-[#dadcf8] text-[#4650dd] px-2 py-1 rounded-md tex-sm">
                   12
                 </span>
-                <a to={"/notFound"} className=" text-2xl font-bold">
-                  Introduction
+                <a to={"/notFound"} className=" text-lg font-bold text-[#343a40]">
+                  Other
                 </a>
               </div>
-              <div className=" flex flex-col mt-5 gap-1">
+              <div className=" flex flex-col mt-5 gap-1 text-sm">
                 <a
                   href="/notFound"
                   className=" flex items-center gap-2 ps-5 hover:underline text-gray-500"
@@ -409,7 +411,7 @@ const Knowledge = () => {
                 felt before.
               </div>
               <div className=" px-8 bg-[#F8F9FA] py-5">
-                <button className=" border px-2 py-1 rounded border-[#4650dd] hover:bg-[#4650dd] hover:text-white">
+                <button className=" border px-2 py-1 rounded border-[#4650dd] hover:bg-[#4650dd] hover:text-white duration-200">
                   Let us know
                 </button>
               </div>

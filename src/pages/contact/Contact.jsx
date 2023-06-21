@@ -10,7 +10,7 @@ const Contact = () => {
         <p>
           {" "}
           <span className=" text-[#4650dd] hover:underline duration-150">
-            Home
+          <Link to={'/'}>Home</Link>
           </span>{" "}
           <span className=" page"> / Contact</span>{" "}
         </p>
@@ -18,20 +18,21 @@ const Contact = () => {
       <div className=" mb-12">
         <h1 className=" header">CONTACTS</h1>
       </div>
-      <div className="row flex flex-wrap gap-4">
+      <div className="row flex flex-wrap gap-2 items-stretch">
         {contactData.map((data) => (
-          <div className="item " key={data.id}>
+          <div className="item  " key={data.id}>
           <Reveal>
-            <div className="contact-card mb-4 px-2 cursor-pointer">
+           <div className="p-2 ">
+           <div className="contact-card mb-4 px-2 cursor-pointer">
               <div className="contact-card-body p-6">
                 <div className="flex  gap-8 items-center">
                   <img src={data.img} className="avatar " alt="" />
-                  <div className="text-[#343a40] ">
-                    <h5 className=" font-bold text-lg ">{data.name}</h5>
+                  <div className="text-[#343a40]   ">
+                    <h5 className=" font-bold text-lg   ">{data.name}</h5>
                     <p className=" text-sm uppercase text-[#6c757d] tracking-[.2em] mb-4">
                       {data.company}
                     </p>
-                    <p>{data.email}</p>
+                    <span style={{ wordBreak: "break-all" }}>{data.email}</span>
                     <p>
                       <span
                         className=" "
@@ -45,6 +46,7 @@ const Contact = () => {
                 </div>
               </div>
             </div>
+           </div>
           </Reveal>
           </div>
         ))}
