@@ -8,40 +8,40 @@ import {
 import { FaTelegramPlane } from "react-icons/fa";
 import "./Profile.css";
 import { BsTwitter } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const ProfilePage = () => {
   return (
     <>
       {/* breadcrumb */}
       <nav class="container">
-        <ol class="list-reset py-4  rounded flex bg-grey-light text-grey">
-          <li class="">
-            <a href="#" class="no-underline hover:underline  text-[#4750dd]">
-              Home
-            </a>
-          </li>
-          <li>/</li>
-          <li class="px-2">
-            <a href="#" class="no-underline text-[#6e767e] ">
-              Profile
-            </a>
-          </li>
-        </ol>
+      <div className="page-breadcrumb mb-8  px-3 pt-12">
+          <p>
+            {" "}
+            <span className=" text-[#4650dd] hover:underline duration-150">
+            <Link to={'/'}>Home</Link>
+            </span>{" "}
+            <span className="muted"> / Profile</span>{" "}
+          </p>
+        </div>
+        <div className=" mb-12 px-3">
+          <h1 className=" invoice-header">Profile</h1>
+        </div>
       </nav>
 
-      <h2 className="  text-[#343a40] text-[36px] font-light tracking-[7.2px] leading-[43.2px] uppercase mb-14">
+      {/* <h2 className="  text-[#343a40] text-[36px] font-light tracking-[7.2px] leading-[43.2px] uppercase mb-14">
         Profile
-      </h2>
+      </h2> */}
 
-      <div className=" flex flex-col lg:flex-row container mx-auto gap-3">
+      <div className=" flex flex-col lg:flex-row  mx-auto gap-5">
         {/* 1st one */}
         <div className="w-full lg:w-1/4">
           {/* 1st card */}
-          <div className="shadow-lg rounded-[1rem]">
-            <div className=" ">
+          <div className="shadow-lg rounded-[1rem] bg-white">
+            <div className="  w-full">
               <img
                 src="https://d19m59y37dris4.cloudfront.net/bubbly/1-3-2/img/photos/paul-morris-116514-unsplash.jpg"
-                className=" rounded-t-[1rem] w-[800px] h-[180px] lg:w-[400px] lg:h-[100px] "
+                className=" rounded-t-[1rem] w-[800px] h-[180px] lg:w-[420px] lg:h-[100px]  "
                 alt=""
               />
             </div>
@@ -50,7 +50,7 @@ const ProfilePage = () => {
                 <img
                   src="https://d19m59y37dris4.cloudfront.net/bubbly/1-3-2/img/avatar-7.jpg"
                   alt=""
-                  className=" w-[90px] h-[90px] rounded-full border  mx-auto mt-[-35px]"
+                  className="p-1 bg-white shadow-lg w-[90px] h-[90px] rounded-full border  mx-auto mt-[-35px]"
                 />
               </div>
               <div className=" text-center p-5 ">
@@ -68,12 +68,12 @@ const ProfilePage = () => {
             </div>
           </div>
           {/* 2nd card */}
-          <div className=" shadow-lg flex items-center p-5 rounded-[1rem] justify-evenly mt-5">
+          <div className=" shadow-lg flex items-center p-5 rounded-[1rem] justify-start gap-4 mt-5 bg-white">
             <div className=" shrink-0">
               <img
                 src="https://d19m59y37dris4.cloudfront.net/bubbly/1-3-2/img/avatar-7.jpg"
                 alt=""
-                className=" w-[80px] h-[80px] rounded-full border  "
+                className="p-1 bg-white shadow-lg w-[80px] h-[80px] rounded-full border  "
               />
             </div>
             <div className="">
@@ -94,21 +94,21 @@ const ProfilePage = () => {
             </div>
           </div>
           {/* 3rd card */}
-          <div className="shadow-lg rounded-[1rem] my-5 overflow-hidden">
-            <div className="flex items-center justify-between p-5">
-              <h2 className=" text-lg font-normal tracking-wider">
+          <div className="shadow-lg rounded-[1rem] my-5 overflow-hidden bg-white">
+            <div className="flex items-center justify-between p-8 text-[#343a40] ">
+              <h2 className=" text-sm uppercase font-normal tracking-[.2em]">
                 My Profile
               </h2>
             </div>
             <hr className=" shadow-md" />
             <div className="">
               {/* component 1st one */}
-              <div className="flex items-center gap-3 p-5">
+              <div className="flex items-center gap-3 py-5 px-8">
                 <div className=" shrink-0">
                   <img
                     src="https://d19m59y37dris4.cloudfront.net/bubbly/1-3-2/img/avatar-7.jpg"
                     alt=""
-                    className=" w-[80px] h-[80px] rounded-full border  "
+                    className="p-1 bg-white shadow-lg w-[80px] h-[80px] rounded-full border  "
                   />
                 </div>
                 <div className="relative mb-3 ">
@@ -174,8 +174,8 @@ const ProfilePage = () => {
         </div>
         {/* 2nd one */}
         <div className="w-full lg:w-3/4">
-          <div className=" p-5 shadow-lg rounded-[1rem]">
-            <div className="relative mb-3 flex items-center">
+          <div className=" px-8 shadow-lg rounded-[1rem] bg-white">
+            <div className="relative mb-3 flex items-center py-8">
               <input
                 type="text"
                 id=""
@@ -194,7 +194,7 @@ const ProfilePage = () => {
                 <img
                   src="https://d19m59y37dris4.cloudfront.net/bubbly/1-3-2/img/avatar-7.jpg"
                   alt=""
-                  className=" w-[80px] h-[80px] rounded-full border "
+                  className="p-1 bg-white shadow-lg w-[80px] h-[80px] rounded-full border "
                 />
               </div>
               {/* 2 nd part */}
@@ -215,7 +215,7 @@ const ProfilePage = () => {
                   <div className=" shrink-0">
                     <img
                       src="https://d19m59y37dris4.cloudfront.net/bubbly/1-3-2/img/avatar-3.jpg"
-                      className="w-16 shadow-md  h-16  rounded-full  border-4 border-white"
+                      className="w-16 shadow-md  h-16   rounded-full  border-4 border-white"
                     />
                   </div>
                   <p className=" text-sm font-light">
@@ -233,7 +233,7 @@ const ProfilePage = () => {
                   <div className=" shrink-0">
                     <img
                       src="https://d19m59y37dris4.cloudfront.net/bubbly/1-3-2/img/avatar-1.jpg"
-                      className="w-16 shadow-md  h-16  rounded-full  border-4 border-white"
+                      className="w-16 shadow-md  h-16  rounded-full  border-4 border-white   "
                     />
                   </div>
                   <p className=" text-sm font-light tracking-wide">
@@ -253,7 +253,7 @@ const ProfilePage = () => {
                 <img
                   src="https://d19m59y37dris4.cloudfront.net/bubbly/1-3-2/img/avatar-7.jpg"
                   alt=""
-                  className=" w-[80px] h-[80px] rounded-full  border-2 "
+                  className="p-1 bg-white shadow-lg w-[80px] h-[80px] rounded-full  border-2 "
                 />
               </div>
               <div className="">
@@ -273,7 +273,7 @@ const ProfilePage = () => {
                 <img
                   src="https://d19m59y37dris4.cloudfront.net/bubbly/1-3-2/img/avatar-7.jpg"
                   alt=""
-                  className=" w-[80px] h-[80px] rounded-full border-2 "
+                  className="p-1 bg-white shadow-lg w-[80px] h-[80px] rounded-full border-2 "
                 />
               </div>
               <div className=" ">
@@ -292,7 +292,7 @@ const ProfilePage = () => {
                   <div className=" shrink-0">
                     <img
                       src="https://d19m59y37dris4.cloudfront.net/bubbly/1-3-2/img/avatar-6.jpg"
-                      className="w-16 shadow-md  h-16  rounded-full border-4 border-white"
+                      className="w-16 shadow-md  h-16   bg-white  rounded-full border-4 border-white"
                     />
                   </div>
                   <p className=" text-sm font-light">
@@ -310,9 +310,9 @@ const ProfilePage = () => {
             </div>
           </div>
           {/* form */}
-          <div className=" shadow-lg mt-3 rounded-[1rem] overflow-hidden">
-            <div className=" p-5 my-5 items-center">
-              <h2 className=" text-base font-normal tracking-wider">
+          <div className=" shadow-lg mt-3 rounded-[1rem] overflow-hidden bg-white">
+            <div className=" p-8  items-center">
+            <h2 className=" text-sm uppercase font-normal tracking-[.2em]">
                 EDIT PROFILE
               </h2>
             </div>
