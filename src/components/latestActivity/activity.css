@@ -39,6 +39,7 @@
   margin: 0px;
   transform: translate(0px, 34px);
   border-radius: 8px;
+  background-color: #fff;
 }
 .activity-section .dropdown-item {
   width: 100%;

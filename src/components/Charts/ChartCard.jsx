@@ -16,7 +16,7 @@ const ChartCard = () => {
 		<>
 			<div className="py-4 flex flex-col lg:flex-row gap-4 mb-10 mx-3 overflow-hidden bg-transparent">
 				<div className=" w-full lg:w-1/3  shadow-lg bg-white rounded-[1rem]">
-					<div className=" chart-card-header  flex justify-between">
+					<div className=" chart-card-header  flex justify-between items-center">
 						<h2 className="  text-sm font-normal tracking-[.2em] text-[#343a40]   uppercase">
 						PROJECT UPDATES
 						</h2>
@@ -146,7 +146,7 @@ const ChartCard = () => {
 				{/* dognut */}
 
 				<div className=" w-full lg:w-1/3  shadow-lg bg-white rounded-[1rem]">
-					<div className=" chart-card-header flex justify-between ">
+					<div className=" chart-card-header flex justify-between  items-center">
 						<h2 className=" text-sm font-normal tracking-[.2em] text-[#343a40]   uppercase">
 						CLOSED PROJECTS
 						</h2>
@@ -244,7 +244,7 @@ const ChartCard = () => {
 				{/* pie  */}
 
 				<div className=" w-full lg:w-1/3 shadow-lg bg-white rounded-[1rem]">
-					<div className=" chart-card-header flex justify-between">
+					<div className=" chart-card-header flex justify-between items-center">
 						<h2 className=" text-sm font-normal tracking-[.2em] text-[#343a40]  uppercase">
 						TICKETS SOLVED
 						</h2>
