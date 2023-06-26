@@ -378,9 +378,9 @@ const Navbar = () => {
           </div>
 
           {/* Sidebar */}
-          <div className="flex items-start">
+          <div className="flex items-start h-[calc(100vh-80px)] overflow-y-scroll">
             <Sidebar sidebar={sidebar} mOpen={!sidebar} />
-            <div className=" xl:w-full min-w-[82%]">
+            <div className=" xl:w-full min-w-[72%] ">
               <div className=" w-full md:p-10 bg-[#f8f9fa]">
                 <Routes>
                   <Route path="/" element={<Dashboard />} />

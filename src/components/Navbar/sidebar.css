@@ -2,13 +2,14 @@
   min-width: 100px;
   transition: 0.3s ease-in-out;
   height: auto;
-  position: relative;
+  position: sticky;
   left: 0;
   bottom: 0;
+  top: 0;
 }
 
 .sidebar.shrink {
-  min-width: 200px;
+  min-width: 230px;
 }
 
 .sidebar-menu {

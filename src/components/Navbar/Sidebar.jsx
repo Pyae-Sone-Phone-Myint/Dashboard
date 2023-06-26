@@ -17,7 +17,7 @@ const Sidebar = ({ sidebar, mOpen }) => {
   return (
     <>
       <div
-        className={` sidebar h-auto ${sidebar && "shrink"}  ${mOpen && "open"}`}
+        className={` sidebar h-[calc(100vh-80px)] ${sidebar && "shrink"}  ${mOpen && "open"}  `}
       >
         <div className={``}>
           <h1
@@ -63,27 +63,27 @@ const Sidebar = ({ sidebar, mOpen }) => {
             </div>
             <AccordionBody className="py-0 mx-0">
               <div className={` ${!sidebar && "text-center"} sidebar-list`}>
-                <NavLink to={"/profile"} className="sidebar-link text-[.75rem]">
+                <NavLink to={"/profile"} className="sidebar-link text-[calc(.75rem+.1vw)]">
                   Profile
                 </NavLink>
                 <NavLink
                   to={"/pricing-table"}
-                  className="sidebar-link text-[.75rem]"
+                  className="sidebar-link text-[calc(.75rem+.1vw)]"
                 >
                   Pricing table
                 </NavLink>
                 <NavLink
                   to={"/contacts"}
-                  className="sidebar-link text-[.75rem]"
+                  className="sidebar-link text-[calc(.75rem+.1vw)]"
                 >
                   Contacts
                 </NavLink>
-                <NavLink to={"/invoice"} className="sidebar-link text-[.75rem]">
+                <NavLink to={"/invoice"} className="sidebar-link text-[calc(.75rem+.1vw)]">
                   Invoice
                 </NavLink>
                 <NavLink
                   to={"/knowledge-base"}
-                  className="sidebar-link text-[.75rem]"
+                  className="sidebar-link text-[calc(.75rem+.1vw)]"
                 >
                   Knowledge base
                 </NavLink>
