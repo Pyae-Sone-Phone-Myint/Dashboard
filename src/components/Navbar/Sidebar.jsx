@@ -114,7 +114,7 @@ const Sidebar = ({ sidebar, mOpen }) => {
             </div>
             <AccordionBody className="py-0 mx-0">
               <div className={` ${!sidebar && "text-center"} sidebar-list`}>
-                <NavLink to={"/"} className="sidebar-link text-[calc(.75rem+.1vw)]">
+                <NavLink to={"/posts"} className="sidebar-link text-[calc(.75rem+.1vw)]">
                   Posts
                 </NavLink>
                 <NavLink
