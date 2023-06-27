@@ -473,6 +473,188 @@ const initialState = {
       page_no: 6,
     },
   ],
+  post_data: [
+    {
+      id: 1,
+      image:
+        "https://d19m59y37dris4.cloudfront.net/bubbly/1-3-2/img/photos/w-100/aron-visuals-3jBU9TbKW7o-unsplash.jpg",
+      title: "accupharm",
+      author: "riley knowles",
+      categories: "trips",
+      date: "2020/11/12",
+    },
+    {
+      id: 2,
+      image:
+        "https://d19m59y37dris4.cloudfront.net/bubbly/1-3-2/img/photos/w-100/montylov-ktZZiHb-GoI-unsplash.jpg",
+      title: "affluex",
+      author: "merrill garrett",
+      categories: "gear",
+      date: "2020/11/29",
+    },
+    {
+      id: 3,
+      image:
+        "https://d19m59y37dris4.cloudfront.net/bubbly/1-3-2/img/photos/w-100/soroush-zargar-zFSUhqGual8-unsplash.jpg",
+      title: "amril",
+      author: "graves richardson",
+      categories: "tips & tricks",
+      date: "2020/112/12",
+    },
+    {
+      id: 4,
+      image:
+        "https://d19m59y37dris4.cloudfront.net/bubbly/1-3-2/img/photos/w-100/henrique-ferreira-RKsLQoSnuTc-unsplash.jpg",
+      title: "aquamate",
+      author: "lester roach",
+      categories: "uncategorized",
+      date: "2022/11/12",
+    },
+    {
+      id: 5,
+      image:
+        "https://d19m59y37dris4.cloudfront.net/bubbly/1-3-2/img/photos/w-100/luca-bravo-O453M2Liufs-unsplash.jpg",
+      title: "balooba",
+      author: "millicent henry",
+      categories: "tips & tricks",
+      date: "2023/11/12",
+    },
+    {
+      id: 6,
+      image:
+        "https://d19m59y37dris4.cloudfront.net/bubbly/1-3-2/img/photos/w-100/stefan-stefancik-0wMmxNB6Xzc-unsplash.jpg",
+      title: "baluba",
+      author: "roach snyder",
+      categories: "stories",
+      date: "2019/07/19",
+    },
+    {
+      id: 7,
+      image:
+        "https://d19m59y37dris4.cloudfront.net/bubbly/1-3-2/img/photos/w-100/luca-bravo-O453M2Liufs-unsplash.jpg",
+      title: "candecor",
+      author: "meyers swanson",
+      categories: "gear",
+      date: "2020/09/12",
+    },
+    {
+      id: 8,
+      image:
+        "https://d19m59y37dris4.cloudfront.net/bubbly/1-3-2/img/photos/w-100/aron-visuals-3jBU9TbKW7o-unsplash.jpg",
+      title: "chorizon",
+      author: "rachel vinson",
+      categories: "tips & tricks",
+      date: "2020/01/12",
+    },
+    {
+      id: 9,
+      image:
+        "https://d19m59y37dris4.cloudfront.net/bubbly/1-3-2/img/photos/w-100/mesut-kaya-eOcyhe5-9sQ-unsplash.jpg",
+      title: "dadabase",
+      author: "jenkins carney",
+      categories: "gear",
+      date: "2023/01/12",
+    },
+    {
+      id: 10,
+      image:
+        "https://d19m59y37dris4.cloudfront.net/bubbly/1-3-2/img/photos/w-100/willian-justen-de-vasconcellos-4hMET7vYTAQ-unsplash.jpg",
+      title: "dentrex",
+      author: "watts riveers",
+      categories: "stories",
+      date: "2020/11/29",
+    },
+    {
+      id: 11,
+      image:
+        "https://d19m59y37dris4.cloudfront.net/bubbly/1-3-2/img/photos/w-100/montylov-ktZZiHb-GoI-unsplash.jpg",
+      title: "emoltra",
+      author: "enid solomon",
+      categories: "uncategorized",
+      date: "2022/11/24",
+    },
+    {
+      id: 12,
+      image:
+        "https://d19m59y37dris4.cloudfront.net/bubbly/1-3-2/img/photos/w-100/henrique-ferreira-RKsLQoSnuTc-unsplash.jpg",
+      title: "euron",
+      author: "noble rojas",
+      categories: "stories",
+      date: "2022/10/12",
+    },
+    {
+      id: 13,
+      image:
+        "https://d19m59y37dris4.cloudfront.net/bubbly/1-3-2/img/photos/w-100/luca-bravo-O453M2Liufs-unsplash.jpg",
+      title: "ginkogene",
+      author: "kristen foreman",
+      categories: "tips & tricks",
+      date: "2019/05/22",
+    },
+    {
+      id: 14,
+      image:
+        "https://d19m59y37dris4.cloudfront.net/bubbly/1-3-2/img/photos/w-100/stefan-stefancik-0wMmxNB6Xzc-unsplash.jpg",
+      title: "kraggle",
+      author: "cox melton",
+      categories: "uncategorized",
+      date: "2022/10/20",
+    },
+    {
+      id: 15,
+      image:
+        "https://d19m59y37dris4.cloudfront.net/bubbly/1-3-2/img/photos/w-100/henrique-ferreira-RKsLQoSnuTc-unsplash.jpg",
+      title: "lovepad",
+      author: "shite curry",
+      categories: "tips & tricks",
+      date: "2018/11/1",
+    },
+    {
+      id: 16,
+      image:
+        "https://d19m59y37dris4.cloudfront.net/bubbly/1-3-2/img/photos/w-100/sorasak-_UIN-pFfJ7c-unsplash.jpg",
+      title: "mantrix",
+      author: "stafford madden",
+      categories: "gear",
+      date: "2022/07/2",
+    },
+    {
+      id: 17,
+      image:
+        "https://d19m59y37dris4.cloudfront.net/bubbly/1-3-2/img/photos/w-100/joseph-barrientos-Ji_G7Bu1MoM-unsplash.jpg",
+      title: "netagy",
+      author: "elisabeth key",
+      categories: "stories",
+      date: "2023/12/04",
+    },
+    {
+      id: 18,
+      image:
+        "https://d19m59y37dris4.cloudfront.net/bubbly/1-3-2/img/photos/w-100/sorasak-_UIN-pFfJ7c-unsplash.jpg",
+      title: "remold",
+      author: "spears collier",
+      categories: "trips",
+      date: "2020/11/12",
+    },
+    {
+      id: 19,
+      image:
+        "https://d19m59y37dris4.cloudfront.net/bubbly/1-3-2/img/photos/w-100/soroush-zargar-zFSUhqGual8-unsplash.jpg",
+      title: "shepard",
+      author: "young bowers",
+      categories: "uncategorized",
+      date: "2019/10/20",
+    },
+    {
+      id: 20,
+      image:
+        "https://d19m59y37dris4.cloudfront.net/bubbly/1-3-2/img/photos/w-100/stefan-stefancik-0wMmxNB6Xzc-unsplash.jpg",
+      title: "uxmox",
+      author: "lynn cantrell",
+      categories: "stories",
+      date: "2022/04/19",
+    },
+  ],
   search: "",
   show_data: [],
   pagination_qty: [],
@@ -505,7 +687,7 @@ export const counterSlice = createSlice({
           });
           const filter_data = search_data.map((data, index) => {
             if (
-              index + 1 >= ((state.pagination_click - 1) * state.limit)+1 &&
+              index + 1 >= (state.pagination_click - 1) * state.limit + 1 &&
               index + 1 <= state.pagination_click * state.limit
             ) {
               return data;
@@ -530,7 +712,65 @@ export const counterSlice = createSlice({
         });
         const filter_data = state.contact_data.map((data, index) => {
           if (
-            index + 1 >= ((state.pagination_click - 1) * state.limit)+1 &&
+            index + 1 >= (state.pagination_click - 1) * state.limit + 1 &&
+            index + 1 <= state.pagination_click * state.limit
+          ) {
+            return data;
+          }
+        });
+        state.show_data = filter_data.filter((data) => {
+          if (data !== "undefined") {
+            return data;
+          }
+        });
+      }
+    },
+    post_pagination: (state) => {
+      if (state.search !== "") {
+        const search_data = state.post_data.filter((data) => {
+          if (data.name.toLowerCase().includes(state.search.toLowerCase())) {
+            return data;
+          }
+        });
+        if (search_data.length !== 0) {
+          state.contact_qty = search_data.length;
+          const qty = Math.ceil(search_data.length / state.limit);
+          const pagi_arr = [];
+          for (let i = 0; i < qty; i++) {
+            pagi_arr.push(i);
+          }
+          state.pagination_qty = pagi_arr;
+          search_data.map((data, index) => {
+            data.offset = index + 1;
+          });
+          const filter_data = search_data.map((data, index) => {
+            if (
+              index + 1 >= (state.pagination_click - 1) * state.limit + 1 &&
+              index + 1 <= state.pagination_click * state.limit
+            ) {
+              return data;
+            }
+          });
+          state.show_data = filter_data.filter((data) => {
+            if (data !== "undefined") {
+              return data;
+            }
+          });
+        }
+      } else {
+        state.contact_qty = state.post_data.length;
+        const qty = Math.ceil(state.post_data.length / state.limit);
+        const pagi_arr = [];
+        for (let i = 0; i < qty; i++) {
+          pagi_arr.push(i);
+        }
+        state.pagination_qty = pagi_arr;
+        state.post_data.map((data, index) => {
+          data.offset = index + 1;
+        });
+        const filter_data = state.post_data.map((data, index) => {
+          if (
+            index + 1 >= (state.pagination_click - 1) * state.limit + 1 &&
             index + 1 <= state.pagination_click * state.limit
           ) {
             return data;
@@ -557,7 +797,7 @@ export const counterSlice = createSlice({
     },
   },
 });
-export const { pagination, increasePgn, increaseLimit, find } =
+export const { pagination, increasePgn, increaseLimit, find,post_pagination } =
   counterSlice.actions;
 
 export default counterSlice.reducer;
