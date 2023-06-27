@@ -1,0 +1,20 @@
+.edit-card {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.edit-card-body {
+  padding: 2rem;
+  overflow: auto;
+  background-color: white;
+  border-radius: 0.25rem;
+}
+.media-btn {
+  color: #4650dd;
+  border: 1px solid #4650dd;
+}
+.media-btn:hover {
+  background-color: #4650dd;
+  color: white;
+}
