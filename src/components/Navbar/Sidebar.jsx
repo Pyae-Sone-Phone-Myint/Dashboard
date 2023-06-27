@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./sidebar.css";
 import { AiOutlineHome } from "react-icons/ai";
 import { NavLink, Navigate, useNavigate } from "react-router-dom";
-import { BsFillLayersFill } from "react-icons/bs";
+import { BsBook, BsFillLayersFill } from "react-icons/bs";
 import { MdKeyboardArrowLeft } from "react-icons/md";
 import { Card, Accordion, AccordionBody } from "@material-tailwind/react";
 import { BiLogOut } from "react-icons/bi";
@@ -86,6 +86,51 @@ const Sidebar = ({ sidebar, mOpen }) => {
                   className="sidebar-link text-[calc(.75rem+.1vw)]"
                 >
                   Knowledge base
+                </NavLink>
+              </div>
+            </AccordionBody>
+          </Accordion>
+          <Accordion open={open === 2}>
+            <div
+              className="sidebar-link cursor-pointer select-none"
+              onClick={() => handleOpen(2)}
+            >
+              <div className={` flex items-center ${!sidebar && "flex-col"}`}>
+                <BsBook size={"1.3rem"} />
+                <h4
+                  className={` sidebar-title ${
+                    !sidebar ? "ms-0 text-[0.75rem]" : "ms-3"
+                  }`}
+                >
+                  CMS
+                </h4>
+                <MdKeyboardArrowLeft
+                  className={` ${!sidebar ? "ms-0 -rotate-90" : "ms-auto"} ${
+                    open === 2 ? "-rotate-90" : ""
+                  } ${!sidebar && open === 2 ? "rotate-90" : ""}`}
+                  size={"1.3rem"}
+                />
+              </div>
+            </div>
+            <AccordionBody className="py-0 mx-0">
+              <div className={` ${!sidebar && "text-center"} sidebar-list`}>
+                <NavLink to={"/"} className="sidebar-link text-[calc(.75rem+.1vw)]">
+                  Posts
+                </NavLink>
+                <NavLink
+                  to={"/cms-new-post"}
+                  className="sidebar-link text-[calc(.75rem+.1vw)]"
+                >
+                  Add new post
+                </NavLink>
+                <NavLink
+                  to={"/"}
+                  className="sidebar-link text-[calc(.75rem+.1vw)]"
+                >
+                  Categories
+                </NavLink>
+                <NavLink to={"/"} className="sidebar-link text-[calc(.75rem+.1vw)]">
+                  Media Library
                 </NavLink>
               </div>
             </AccordionBody>

@@ -18,6 +18,7 @@ import Contact from "../../pages/contact/Contact";
 import Invoice from "../../pages/invoice/Invoice";
 import Knowledge from "../../pages/knowledge/Knowledge";
 import ProfilePage from "../../pages/profile/ProfilePage";
+import Posts from "../../pages/Posts/Posts";
 
 const Navbar = () => {
   const [sidebar, setSidebar] = useState(true);
@@ -388,6 +389,7 @@ const Navbar = () => {
                   <Route path="contacts" element={<Contact />} />
                   <Route path="invoice" element={<Invoice />} />
                   <Route path="/profile" element={<ProfilePage />} />
+                  <Route path="/cms-new-post" element={<Posts />} />
                 </Routes>
               </div>
               <Routes>
