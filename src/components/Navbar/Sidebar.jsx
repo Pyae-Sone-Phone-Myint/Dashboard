@@ -123,15 +123,7 @@ const Sidebar = ({ sidebar, mOpen }) => {
                 >
                   Add new post
                 </NavLink>
-                <NavLink
-                  to={"/"}
-                  className="sidebar-link text-[calc(.75rem+.1vw)]"
-                >
-                  Categories
-                </NavLink>
-                <NavLink to={"/"} className="sidebar-link text-[calc(.75rem+.1vw)]">
-                  Media Library
-                </NavLink>
+               
               </div>
             </AccordionBody>
           </Accordion>
