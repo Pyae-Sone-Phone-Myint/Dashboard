@@ -499,7 +499,7 @@ const initialState = {
       title: "amril",
       author: "graves richardson",
       categories: "tips & tricks",
-      date: "2020/112/12",
+      date: "2020/11/12",
     },
     {
       id: 4,
