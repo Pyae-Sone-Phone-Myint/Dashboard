@@ -50,7 +50,6 @@ const Posts = () => {
           <span className=" uppercase">add new</span>
         </a>
       </div>
-      <Reveal>
         <div className=" rounded-[1rem] overflow-hidden shadow-lg">
           <div className="bg-white flex ps-5 lg:ps-10 rounded-lg pe-5 lg:pe-6 w-full py-8 items-center lg:items-start flex-col lg:flex-row  gap-4 justify-start lg:justify-between">
             <div className="w-full  flex gap-3 lg:gap-5 lg:justify-start justify-between">
@@ -150,7 +149,7 @@ const Posts = () => {
                   </th>
                 </tr>
               </thead>
-              <tbody className="w-full">
+              <tbody className="w-full rounded-b-[1rem]">
                 {show_data?.map((data) => {
                   return (
                     <tr
@@ -183,7 +182,7 @@ const Posts = () => {
                   );
                 })}
                 <tr>
-                  <td className=" px-8 py-8 border" colSpan={5}>
+                  <td className=" px-8 py-8 rounded-b-[1rem]" colSpan={5}>
                     <div className=" w-full flex items-center justify-between">
                       <div className=" text-sm">
                         Showing {contact_start} to {contact_end} of{" "}
@@ -243,7 +242,6 @@ const Posts = () => {
             </table>
           </div>
         </div>
-      </Reveal>
     </>
   );
 };
