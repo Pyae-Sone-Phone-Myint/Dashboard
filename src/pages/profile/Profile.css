@@ -19,8 +19,16 @@
 	color: #343a40;
 	font-size: 14px;
   }
+  .form-control-textarea {
+	padding: 0rem 0.75rem;
+	line-height: 1.25;
+	border-radius: 5px;
+	border: 1px solid #ced4da;
+	color: #343a40;
+	font-size: 14px;
+  }
 
-.form-control-profile:focus, .form-control-input:focus {
+.form-control-profile:focus, .form-control-input:focus, .form-control-textarea:focus {
 	color: #343a40;
 	background-color: #fff;
 	border-color: #a3a8ee;

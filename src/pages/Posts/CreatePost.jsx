@@ -4,20 +4,20 @@ import MainEditor from "../../components/editor/MainEditor";
 import Reveal from "../../components/animations/Reveal";
 
 const CreatePost = () => {
-  const [statusShow, setStatusShow] = useState(false);
-  const [visibilityShow, setVisibilityShow] = useState(false);
-  const [publishShow, setPublishShow] = useState(false);
-  const radio = ["Standard", "Aside", "Image", "Video", "Quote", "Link"];
-  const check = ["Gear", "Stories", "Tips & Tricks", "Trips", "Uncategorized"];
+  // const [statusShow, setStatusShow] = useState(false);
+  // const [visibilityShow, setVisibilityShow] = useState(false);
+  // const [publishShow, setPublishShow] = useState(false);
+  // const radio = ["Standard", "Aside", "Image", "Video", "Quote", "Link"];
+  // const check = ["Gear", "Stories", "Tips & Tricks", "Trips", "Uncategorized"];
 
   return (
     <Reveal>
       <div className=" flex min-h-screen px-5 md:px-0">
         <div className="flex w-full lg:flex-row flex-col gap-5">
-          <div className="w-full md:w-[100%] lg:w-[75%] flex flex-col gap-10">
+          <div className="w-full md:w-[100%] lg:w-[100%] flex flex-col gap-10">
             <MainEditor />
           </div>
-          <div className="w-full md:w-[100%] lg:w-[25%] flex flex-col gap-5">
+          {/* <div className="w-full md:w-[100%] lg:w-[25%] flex flex-col gap-5">
             <div className="  shadow-xl rounded-xl bg-white">
               <h1 className=" py-5 rounded-t-xl px-8 tracking-[0.2rem] shadow">
                 PUBLISH
@@ -217,7 +217,7 @@ const CreatePost = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </Reveal>
