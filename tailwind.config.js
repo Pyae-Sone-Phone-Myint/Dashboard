@@ -5,7 +5,7 @@ export default withMT({
   theme: {
     extend: {
       colors: {
-        primary: "#4650dd",
+        primary: "#64AB45",
       },
     },
   },

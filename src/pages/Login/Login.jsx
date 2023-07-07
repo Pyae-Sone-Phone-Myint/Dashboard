@@ -71,7 +71,7 @@ const Login = () => {
                         />
                         <label htmlFor="check">Remember me</label>
                       </div>
-                      <button className=" bg-primary hover:bg-[#4249b4] transition duration-150 text-white px-6 py-3 rounded-md font-medium text-lg leading-7">
+                      <button className=" bg-primary hover:bg-[#69B548] transition duration-150 text-white px-6 py-3 rounded-md font-medium text-lg leading-7">
                         Submit
                       </button>
                     </form>

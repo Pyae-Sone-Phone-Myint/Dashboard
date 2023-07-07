@@ -21,7 +21,7 @@ const Knowledge = () => {
         <div className="page-breadcrumb mb-8  px-3">
             <p>
               {" "}
-              <span className=" text-[#4650dd] hover:underline duration-150">
+              <span className=" text-primary hover:underline duration-150">
                 <Link to={'/'}>Home</Link>
               </span>{" "}
               <span className="muted"> / Knowledge Base</span>{" "}
@@ -51,7 +51,7 @@ const Knowledge = () => {
               id=""
               placeholder="Search Something..."
             />
-            <button className=" border border-[#4650dd] hover:text-white rounded-e-lg px-3 hover:bg-[#4752ea]">
+            <button className=" border border-primary hover:text-white rounded-e-lg px-3 hover:bg-[#4752ea]">
               <BiSearch size={"1.3rem"} />
             </button>
           </div>
@@ -62,10 +62,10 @@ const Knowledge = () => {
               to={"/notFound"}
               className="w-[100%] md:w-[48%] select-none py-14 bg-white rounded-xl gap-3 lg:w-[24%] shadow cursor-pointer hover:-translate-y-2 ease-linear duration-100 flex flex-col items-center justify-center"
             >
-              <div className=" w-[90px] h-[90px] rounded-full flex items-center justify-center bg-[#dadcf8]">
+              <div className=" w-[90px] h-[90px] rounded-full flex items-center justify-center bg-[#e6ffdb]">
                 <HiOutlineDocumentSearch
                   size={"2.4rem"}
-                  className=" text-[#4650dd]"
+                  className=" text-primary"
                 />
               </div>
               <h1 className=" font-bold text-gray-700">Help & Documentation</h1>
@@ -120,7 +120,7 @@ const Knowledge = () => {
         <div className=" px-3 lg:px-20 mb-20">
           <div className=" flex lg:items-center gap-5 lg:gap-0 flex-col lg:flex-row lg:justify-between mb-14">
             <div className="">
-              <div className=" tracking-widest mb-3 text-[#4650dd]">
+              <div className=" tracking-widest mb-3 text-primary">
                 WHAT DO YOU NEED TO KNOW?
               </div>
               <h1 className=" text-[26px] lg:text-[35px] text-gray-700 font-bold">
@@ -139,7 +139,7 @@ const Knowledge = () => {
           <div className=" flex flex-wrap gap-10">
             <div>
               <div className=" flex items-center gap-2">
-                <span className="border bg-[#dadcf8] text-[#4650dd] px-2 py-1 rounded-md tex-sm">
+                <span className="border bg-[#e6ffdb] text-primary px-2 py-1 rounded-md tex-sm">
                   12
                 </span>
                 <a to={"/notFound"} className=" text-lg font-bold text-[#343a40]">
@@ -179,7 +179,7 @@ const Knowledge = () => {
             </div>
             <div>
               <div className=" flex items-center gap-2">
-                <span className="border bg-[#dadcf8] text-[#4650dd] px-2 py-1 rounded-md tex-sm">
+                <span className="border bg-[#e6ffdb] text-primary px-2 py-1 rounded-md tex-sm">
                   12
                 </span>
                 <a to={"/notFound"} className=" text-lg font-bold text-[#343a40]">
@@ -219,7 +219,7 @@ const Knowledge = () => {
             </div>
             <div>
               <div className=" flex items-center gap-2">
-                <span className="border bg-[#dadcf8] text-[#4650dd] px-2 py-1 rounded-md tex-sm">
+                <span className="border bg-[#e6ffdb] text-primary px-2 py-1 rounded-md tex-sm">
                   12
                 </span>
                 <a to={"/notFound"} className=" text-lg font-bold text-[#343a40]">
@@ -259,7 +259,7 @@ const Knowledge = () => {
             </div>
             <div>
               <div className=" flex items-center gap-2">
-                <span className="border bg-[#dadcf8] text-[#4650dd] px-2 py-1 rounded-md tex-sm">
+                <span className="border bg-[#e6ffdb] text-primary px-2 py-1 rounded-md tex-sm">
                   12
                 </span>
                 <a to={"/notFound"} className=" text-lg font-bold text-[#343a40]">
@@ -299,7 +299,7 @@ const Knowledge = () => {
             </div>
             <div>
               <div className=" flex items-center gap-2">
-                <span className="border bg-[#dadcf8] text-[#4650dd] px-2 py-1 rounded-md tex-sm">
+                <span className="border bg-[#e6ffdb] text-primary px-2 py-1 rounded-md tex-sm">
                   12
                 </span>
                 <a to={"/notFound"} className=" text-lg font-bold text-[#343a40]">
@@ -342,7 +342,7 @@ const Knowledge = () => {
         {/* GET SUPPORT FROM REAL PEOPLE */}
         <div className=" ">
           <div className="bg-[#E9ECEF] py-20 flex flex-col items-center px-3 lg:px-0 justify-center gap-8">
-            <h1 className=" text-[20px] tracking-widest font-bold text-[#4650dd]">
+            <h1 className=" text-[20px] tracking-widest font-bold text-primary">
               GET SUPPORT FROM REAL PEOPLE
             </h1>
             <p className="w-full lg:w-1/2 text-center text-[17px] text-gray-500">
@@ -395,7 +395,7 @@ const Knowledge = () => {
             >
               <div className="flex  items-center px-8 border-b justify-between py-5">
                 <div className="flex flex-col ">
-                  <div className=" tracking-widest text-[#4650dd] text-sm mb-1">
+                  <div className=" tracking-widest text-primary text-sm mb-1">
                     DROP US A LINE
                   </div>
                   <h1 className=" text-gray-700 text-2xl font-bold">Contact</h1>
@@ -411,7 +411,7 @@ const Knowledge = () => {
                 felt before.
               </div>
               <div className=" px-8 bg-[#F8F9FA] py-5">
-                <button className=" border px-2 py-1 rounded border-[#4650dd] hover:bg-[#4650dd] hover:text-white duration-200">
+                <button className=" border px-2 py-1 rounded border-primary hover:bg-primary hover:text-white duration-200">
                   Let us know
                 </button>
               </div>

@@ -34,7 +34,7 @@ const MainEditor = () => {
   return (
     <div className="edit-card my-6">
       <div className=" edit-card-body">
-        
+        <form action="" method="POST" id="tourCreateForm"></form>
         <div className="mb-2">
           <p className=" font-semibold text-2xl">Tour Information:</p>
         </div>
@@ -43,6 +43,7 @@ const MainEditor = () => {
             Title
           </label>
           <input
+          form="tourCreateForm"
             type="text"
             id="title"
             required
@@ -56,6 +57,7 @@ const MainEditor = () => {
           </label>
           <input
             type="text"
+            form="tourCreateForm"
             id="destination"
             required
             className="form-control-input w-full outline-none  mt-4 mb-6"
@@ -69,6 +71,7 @@ const MainEditor = () => {
             </label>
             <input
               type="number"
+              form="tourCreateForm"
               id="price"
               required
               className="form-control-input w-full outline-none  mt-4 mb-6"
@@ -81,6 +84,7 @@ const MainEditor = () => {
               Duration (Days)
             </label>
             <input
+               form="tourCreateForm"
               type="number"
               id="duration"
               required
@@ -102,6 +106,7 @@ const MainEditor = () => {
                 <div key={nanoid()} className=" flex gap-2 my-1">
                   <input
                     type="radio"
+                    form="tourCreateForm"
                     className=" checked:shadow-none"
                     name="type"
                     id={radio}
@@ -122,6 +127,7 @@ const MainEditor = () => {
               <div key={nanoid()} className=" flex gap-2 my-1">
                 <input
                   type="checkbox"
+                  form="tourCreateForm"
                   className=" focus:shadow-none checked:shadow-none"
                   name="includedServices[]"
                   id={check}
@@ -145,6 +151,7 @@ const MainEditor = () => {
               type="number"
               id="maxGuests"
               required
+              form="tourCreateForm"
               className="form-control-input w-full outline-none  mt-4 mb-6"
               placeholder=""
               min={10}
@@ -158,6 +165,7 @@ const MainEditor = () => {
               type="number"
               id="minAge"
               required
+              form="tourCreateForm"
               className="form-control-input w-full outline-none  mt-4 mb-6"
               placeholder=""
               min={5}
@@ -172,6 +180,7 @@ const MainEditor = () => {
               id="location"
               required
               min={1}
+              form="tourCreateForm"
               className="form-control-input w-full outline-none  mt-4 mb-6"
               placeholder=""
             />
@@ -190,6 +199,7 @@ const MainEditor = () => {
             type="text"
             id="exploreTours"
             required
+            form="tourCreateForm"
             rows={7}
             className="  form-control-textarea pt-3 w-full outline-none  mt-4 mb-6"
             placeholder=""
@@ -204,6 +214,7 @@ const MainEditor = () => {
             id="advanceFacilities"
             required
             rows={7}
+            form="tourCreateForm"
             className="  form-control-textarea pt-3 w-full outline-none  mt-4 mb-6"
             placeholder=""
           ></textarea>
@@ -216,6 +227,7 @@ const MainEditor = () => {
             type="text"
             id="challenge"
             required
+            form="tourCreateForm"
             rows={7}
             className="  form-control-textarea pt-3 w-full outline-none  mt-4 mb-6"
             placeholder=""
@@ -227,6 +239,7 @@ const MainEditor = () => {
             onupdatefiles={setFiles}
             allowMultiple={true}
             maxFiles={3}
+            
             // server={'/api'}
             name="files" /* sets the file input name, it's filepond by default */
             labelIdle='Drag & Drop your files or <span class="filepond--label-action">Browse</span>'
@@ -236,7 +249,7 @@ const MainEditor = () => {
         <Editor />
         </div>
         <div className=" my-4">
-          <button type="submit" className=" text-lg btn media-btn mb-6">
+          <button type="submit"  form="tourCreateForm" className=" text-lg btn media-btn mb-6">
             Create
           </button>
         </div>

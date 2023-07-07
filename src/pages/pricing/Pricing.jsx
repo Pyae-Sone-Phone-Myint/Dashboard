@@ -12,7 +12,7 @@ const Pricing = () => {
         <div className="page-breadcrumb mb-8 px-3">
           <p>
             {" "}
-            <span className=" text-[#4650dd] hover:underline duration-150">
+            <span className=" text-primary hover:underline duration-150">
             <Link to={'/'}>Home</Link>
             </span>{" "}
             <span className="muted"> / Pricing Tables</span>{" "}
@@ -43,7 +43,7 @@ const Pricing = () => {
                           >
                             <span className="  text-center font-bold ">
                               {data.status ? (
-                                <FaCheck className="  text-[#4650dd]   " />
+                                <FaCheck className="  text-primary   " />
                               ) : (
                                 <FaTimes className="   muted  " />
                               )}
