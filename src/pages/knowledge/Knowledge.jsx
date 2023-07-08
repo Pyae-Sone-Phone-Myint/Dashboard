@@ -20,10 +20,9 @@ const Knowledge = () => {
         <div className="bg-[#F8F9FA]  px-3 lg:px-10 py-2 mb-20">
           <div className="page-breadcrumb mb-8  px-3">
             <p>
-              {" "}
               <span className=" text-[#4650dd] hover:underline duration-150">
                 <Link to={"/"}>Home</Link>
-              </span>{" "}
+              </span>
               <span className="muted"> / Knowledge Base</span>{" "}
             </p>
           </div>
@@ -121,13 +120,13 @@ const Knowledge = () => {
                 </p>
               </Link>
             </div>
-          </Reveal>
+          </Reveal>        
         </div>
         {/* choose Topic */}
         <div className=" px-3 lg:px-20 mb-20">
           <div className=" flex lg:items-center gap-5 lg:gap-0 flex-col lg:flex-row lg:justify-between mb-14">
             <div className="">
-              <div className=" tracking-widest mb-3 text-[#4650dd]">
+              <div className=" tracking-widest mb-3 text-primary">
                 WHAT DO YOU NEED TO KNOW?
               </div>
               <h1 className=" text-[26px] lg:text-[35px] text-gray-700 font-bold">
@@ -146,7 +145,7 @@ const Knowledge = () => {
           <div className=" flex flex-wrap gap-10">
             <div>
               <div className=" flex items-center gap-2">
-                <span className="border bg-[#dadcf8] text-[#4650dd] px-2 py-1 rounded-md tex-sm">
+                <span className="border bg-[#e6ffdb] text-primary px-2 py-1 rounded-md tex-sm">
                   12
                 </span>
                 <a
@@ -189,7 +188,7 @@ const Knowledge = () => {
             </div>
             <div>
               <div className=" flex items-center gap-2">
-                <span className="border bg-[#dadcf8] text-[#4650dd] px-2 py-1 rounded-md tex-sm">
+                <span className="border bg-[#e6ffdb] text-primary px-2 py-1 rounded-md tex-sm">
                   12
                 </span>
                 <a
@@ -232,7 +231,7 @@ const Knowledge = () => {
             </div>
             <div>
               <div className=" flex items-center gap-2">
-                <span className="border bg-[#dadcf8] text-[#4650dd] px-2 py-1 rounded-md tex-sm">
+                <span className="border bg-[#e6ffdb] text-primary px-2 py-1 rounded-md tex-sm">
                   12
                 </span>
                 <a
@@ -275,7 +274,7 @@ const Knowledge = () => {
             </div>
             <div>
               <div className=" flex items-center gap-2">
-                <span className="border bg-[#dadcf8] text-[#4650dd] px-2 py-1 rounded-md tex-sm">
+                <span className="border bg-[#e6ffdb] text-primary px-2 py-1 rounded-md tex-sm">
                   12
                 </span>
                 <a
@@ -318,7 +317,7 @@ const Knowledge = () => {
             </div>
             <div>
               <div className=" flex items-center gap-2">
-                <span className="border bg-[#dadcf8] text-[#4650dd] px-2 py-1 rounded-md tex-sm">
+                <span className="border bg-[#e6ffdb] text-primary px-2 py-1 rounded-md tex-sm">
                   12
                 </span>
                 <a
@@ -364,7 +363,7 @@ const Knowledge = () => {
         {/* GET SUPPORT FROM REAL PEOPLE */}
         <div className=" ">
           <div className="bg-[#E9ECEF] py-20 flex flex-col items-center px-3 lg:px-0 justify-center gap-8">
-            <h1 className=" text-[20px] tracking-widest font-bold text-[#4650dd]">
+            <h1 className=" text-[20px] tracking-widest font-bold text-primary">
               GET SUPPORT FROM REAL PEOPLE
             </h1>
             <p className="w-full lg:w-1/2 text-center text-[17px] text-gray-500">
@@ -417,7 +416,7 @@ const Knowledge = () => {
             >
               <div className="flex  items-center px-8 border-b justify-between py-5">
                 <div className="flex flex-col ">
-                  <div className=" tracking-widest text-[#4650dd] text-sm mb-1">
+                  <div className=" tracking-widest text-primary text-sm mb-1">
                     DROP US A LINE
                   </div>
                   <h1 className=" text-gray-700 text-2xl font-bold">Contact</h1>
@@ -433,7 +432,7 @@ const Knowledge = () => {
                 felt before.
               </div>
               <div className=" px-8 bg-[#F8F9FA] py-5">
-                <button className=" border px-2 py-1 rounded border-[#4650dd] hover:bg-[#4650dd] hover:text-white duration-200">
+                <button className=" border px-2 py-1 rounded border-primary hover:bg-primary hover:text-white duration-200">
                   Let us know
                 </button>
               </div>

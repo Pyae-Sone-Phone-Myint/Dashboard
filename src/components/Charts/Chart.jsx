@@ -27,7 +27,7 @@ const Chart = () => {
 					<div className="flex items-center justify-between px-[2rem] pt-[2rem] pb-[1.5rem] shadow">
 						<h2 className=" text-base font-normal tracking-[.2em] text-[#343a40]   uppercase">
 
-							Sales By Channel
+							Overview
 						</h2>
 						<div className="relative">
 							<button
@@ -69,7 +69,7 @@ const Chart = () => {
 							<h2 className=" text-[#adb5bd] capitalize text-base tracking-wider">
 								TOTAL REVENUE
 							</h2>
-							<h1 className=" text-[#4650dd] text-4xl font-bold">$19,200</h1>
+							<h1 className=" text-[#63ab45] text-4xl font-bold">$19,200</h1>
 							<div className="flex gap-3">
 								<p className="text-[#6c757d]">+$2,032</p>
 								<span className="flex items-center px-2 py-1 text-xs rounded text-[#03cfb7] bg-[#cdf5f1]">
@@ -116,15 +116,15 @@ const Chart = () => {
 						<BarChart />
 						<div className="flex items-center justify-center">
 							<div className="flex items-center">
-								<BsDot className=" text-5xl text-[#4550dd]" />
+								<BsDot className=" text-5xl text-[#63ab45]" />
 								<p className="text-[#adb5bd]  text-base tracking-wider">
 									Organic Search
 								</p>
 							</div>
 							<div className=" flex items-center justify-center">
-								<BsDot className=" text-5xl text-[#d0d2f3]" />
+								<BsDot className=" text-5xl text-[#CFF5E7]" />
 								<p className="text-[#adb5bd] capitalize text-base tracking-wider">
-									Facebook Ads
+									Local tour
 								</p>
 							</div>
 						</div>

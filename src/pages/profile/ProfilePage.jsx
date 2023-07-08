@@ -18,7 +18,7 @@ const ProfilePage = () => {
       <div className="page-breadcrumb mb-8  px-3 pt-12">
           <p>
             {" "}
-            <span className=" text-[#4650dd] hover:underline duration-150">
+            <span className=" text-[#64AB45] hover:underline duration-150">
             <Link to={'/'}>Home</Link>
             </span>{" "}
             <span className="muted"> / Profile</span>{" "}

@@ -36,7 +36,7 @@ const Register = () => {
                       <input type="checkbox" className=" form-check-input" id="check"/>
                       <label htmlFor="check">I agree with the <a href='#' className='text-primary hover:underline'>Terms & Conditions</a></label>
                     </div>
-                    <button className=" bg-primary hover:bg-[#4249b4] transition duration-150 text-white px-4 py-1 rounded-md font-medium leading-7">Register</button>
+                    <button className=" bg-primary hover:bg-[#69B548] transition duration-150 text-white px-6 py-3 rounded-md font-medium leading-7">Register</button>
                   </form>
                 </div>
                 <div className=" px-12 py-5 bg-[rgba(0,0,0,0.03)] text-[.7875rem]">
