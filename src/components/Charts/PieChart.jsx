@@ -14,9 +14,9 @@ const PieChart = () => {
 						{
 							label: "",
 							data: [300, 80, 100, 50],
-							backgroundColor: ["#6610f2", "#c29ff9", "#a371f7", "#8540f5"],
-							borderColor: ["#6610f2", "#c29ff9", "#a371f7", "#8540f5"],
-							borderWidth: 1,
+							backgroundColor: ["#63ab45", "#82bb6a", "#72b357", "#91c47c"],
+							hoverBackgroundColor: ["#a1cc8f", "#b1d5a2", "#c0ddb4", "#d0e5c7"],
+							
 						},
 						
 					],

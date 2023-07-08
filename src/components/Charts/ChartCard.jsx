@@ -205,28 +205,28 @@ const ChartCard = () => {
 						<div className="flex items-center justify-center ">
 							<div className="flex flex-col items-center">
 								<div className="flex items-center">
-									<BsDot className=" text-4xl text-[#0e6dfd]" />
+									<BsDot className=" text-4xl text-[#63ab45]" />
 									<p className="text-[#adb5bd]  text-sm ">Sandra</p>
 								</div>
 								<p className=" text-base font-bold">250</p>
 							</div>
 							<div className="flex flex-col items-center">
 								<div className="flex items-center">
-									<BsDot className=" text-4xl text-[#9ec5fe]" />
+									<BsDot className=" text-4xl text-[#82bb6a]" />
 									<p className="text-[#adb5bd]  text-sm "> Becky</p>
 								</div>
 								<p className=" text-base font-bold">50</p>
 							</div>
 							<div className="flex flex-col items-center">
 								<div className="flex items-center">
-									<BsDot className=" text-4xl text-[#6ea8fe]" />
+									<BsDot className=" text-4xl text-[#72b357]" />
 									<p className="text-[#adb5bd]  text-sm ">Julie</p>
 								</div>
 								<p className=" text-base font-bold">100</p>
 							</div>
 							<div className="lg:hidden flex flex-col items-center">
 								<div className="flex items-center">
-									<BsDot className=" text-4xl text-[#3d8bfc]" />
+									<BsDot className=" text-4xl text-[#91c47c]" />
 									<p className="text-[#adb5bd]  text-sm ">Romero</p>
 								</div>
 								<p className=" text-base font-bold">40</p>
@@ -234,7 +234,7 @@ const ChartCard = () => {
 						</div>
 						<div className="hidden lg:flex flex-col items-center">
 							<div className="flex items-center">
-								<BsDot className=" text-4xl text-[#3d8bfc]" />
+								<BsDot className=" text-4xl text-[#91c47c]" />
 								<p className="text-[#adb5bd]  text-sm ">Romero</p>
 							</div>
 							<p className=" text-base font-bold">40</p>
@@ -301,28 +301,28 @@ const ChartCard = () => {
 						<div className="flex items-center justify-center ">
 							<div className="flex flex-col items-center">
 								<div className="flex items-center">
-									<BsDot className=" text-4xl text-[#0e6dfd]" />
+									<BsDot className=" text-4xl text-[#63ab45]" />
 									<p className="text-[#adb5bd]  text-sm ">John</p>
 								</div>
 								<p className=" text-base font-bold">300</p>
 							</div>
 							<div className="flex flex-col items-center">
 								<div className="flex items-center">
-									<BsDot className=" text-4xl text-[#9ec5fe]" />
+									<BsDot className=" text-4xl text-[#82bb6a]" />
 									<p className="text-[#adb5bd]  text-sm "> Mark</p>
 								</div>
 								<p className=" text-base font-bold">50</p>
 							</div>
 							<div className="flex flex-col items-center">
 								<div className="flex items-center">
-									<BsDot className=" text-4xl text-[#6ea8fe]" />
+									<BsDot className=" text-4xl text-[#72b357]" />
 									<p className="text-[#adb5bd]  text-sm ">Frank</p>
 								</div>
 								<p className=" text-base font-bold">100</p>
 							</div>
 							<div className="flex flex-col items-center  lg:hidden">
 								<div className="flex items-center">
-									<BsDot className=" text-4xl text-[#6ea8fe]" />
+									<BsDot className=" text-4xl text-[#91c47c]" />
 									<p className="text-[#adb5bd]  text-sm ">Danny</p>
 								</div>
 								<p className=" text-base font-bold">80</p>
@@ -330,7 +330,7 @@ const ChartCard = () => {
 						</div>
 						<div className="hidden flex-col items-center mx-auto text-center  lg:flex">
 							<div className="flex items-center">
-								<BsDot className=" text-4xl text-[#6ea8fe]" />
+								<BsDot className=" text-4xl text-[#91c47c]" />
 								<p className="text-[#adb5bd]  text-sm ">Danny</p>
 							</div>
 							<p className=" text-base font-bold">80</p>
