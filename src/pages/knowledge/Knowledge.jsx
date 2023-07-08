@@ -50,7 +50,7 @@ const Knowledge = () => {
               id=""
               placeholder="Search Something..."
             />
-            <button className=" border border-[#4650dd] hover:text-white rounded-e-lg px-3 hover:bg-primary">
+            <button className=" border border-primary hover:text-white rounded-e-lg px-3 hover:bg-primary">
               <BiSearch size={"1.3rem"} />
             </button>
           </div>

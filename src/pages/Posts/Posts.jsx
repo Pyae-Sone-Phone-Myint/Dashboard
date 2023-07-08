@@ -114,7 +114,7 @@ const Posts = () => {
                 </th>
                 <th className="w-[20%]  py-6 text-white ">
                   <div className=" tracking-widest text-sm text-center  flex items-center justify-center">
-                    DATE
+                    DURATION
                   </div>
                 </th>
               </tr>
@@ -148,7 +148,7 @@ const Posts = () => {
                     <td className=" capitalize text-sm text-center font-semibold text-[#619d39]">
                       {data?.tour_type}
                     </td>
-                    <td className=" text-sm text-center">{data?.date}</td>
+                    <td className=" text-sm text-center">{data?.duration}</td>
                   </tr>
                 );
               })}
