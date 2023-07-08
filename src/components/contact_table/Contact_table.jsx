@@ -16,8 +16,8 @@ const Contact_table = () => {
       <div className="w-full my-20 mx-auto  rounded-xl   table_shadow bg-[#F8F9FA]">
         {/* contact_title */}
         <div className="  py-[20px]  flex tracking-[0.3rem] relative ps-5 pe-0 lg:ps-10 lg:pe-2 rounded-t-xl bg-white shadow items-center justify-between ">
-          <h1 className=" text-lg">LATEST CONTRACTS</h1>
-          <button className=" hover:bg-[#4752ea61] dropdown_icon rounded-full p-2 text-gray-400 hover:text-[#4650dd] ">
+          <h1 className=" text-lg">BOOKING CONTRACTS</h1>
+          <button className=" hover:bg-[#81c05746] dropdown_icon rounded-full p-2 text-gray-400 hover:text-[#81c057] ">
             <BiDotsVerticalRounded className="" size={"1.7rem"} />
           </button>
           <div
@@ -58,7 +58,7 @@ const Contact_table = () => {
                 Delete
               </option>
             </select>
-            <button className="px-3 rounded border text-[13px] apply_btn border-[#4650dd]">
+            <button className="px-3 rounded border text-[13px] apply_btn border-[#81c057e3]">
               Apply
             </button>
             <select
@@ -78,7 +78,7 @@ const Contact_table = () => {
             <input
               onChange={(e) => dispatch(find(e.target.value))}
               type="text"
-              className=" border border-gray-300 w-full rounded-lg  py-[3px] text-md outline-none ps-3"
+              className=" border focus:shadow focus:shadow-[#81c057e3] border-gray-300 w-full rounded-lg  py-[3px] text-md outline-none ps-3"
               placeholder="Search..."
             />
           </div>
@@ -86,71 +86,36 @@ const Contact_table = () => {
         <div className="overflow-x-scroll lg:overflow-auto">
           <div className="w-[100%] px-10 ">{/* contact_table */}</div>
           <table className=" w-full border">
-            <thead className="bg-[#343A40]">
+            <thead className="bg-[#81c057e3]">
               <tr className=" w-full justify-between">
-                <th className=" ps-10 py-2 ">
+                <th className=" ps-10 py-6 ">
+                  <div className="  tracking-widest text-white text-sm text-start flex items-center justify-between">
+                    NO
+                  </div>
+                </th>
+                <th className=" ps-10 py-6 ">
                   <div className="  tracking-widest text-white text-sm text-start flex items-center justify-between">
                     NAME
-                    <div className="  text-gray-300 flex flex-col">
-                      <button>
-                        <MdKeyboardArrowUp size={"1.5rem"} />
-                      </button>
-                      <button>
-                        <MdKeyboardArrowDown size={"1.5rem"} />
-                      </button>
-                    </div>
                   </div>
                 </th>
-                <th className="  ps-5 py-2 ">
+                <th className="  ps-5 py-6 ">
                   <div className=" tracking-widest flex items-center justify-between text-white text-sm text-start">
-                    COMPANY
-                    <div className=" flex flex-col my-auto text-gray-300">
-                      <button>
-                        <MdKeyboardArrowUp size={"1.5rem"} />
-                      </button>
-                      <button>
-                        <MdKeyboardArrowDown size={"1.5rem"} />
-                      </button>
-                    </div>
+                    TOUR
                   </div>
                 </th>
-                <th className=" ps-5 py-2 ">
+                <th className=" ps-5 py-6 ">
                   <div className="flex items-center justify-between  tracking-widest text-white text-sm text-start">
-                    STATUS
-                    <div className="  text-gray-300 flex flex-col">
-                      <button>
-                        <MdKeyboardArrowUp size={"1.5rem"} />
-                      </button>
-                      <button>
-                        <MdKeyboardArrowDown size={"1.5rem"} />
-                      </button>
-                    </div>
+                    PRICE
                   </div>
                 </th>
-                <th className="  ps-5 py-2 text-white ">
+                <th className="  ps-5 py-6 text-white ">
                   <div className="tracking-widest text-sm flex items-center justify-between">
-                    CONTRACT
-                    <div className="  text-gray-300 flex flex-col">
-                      <button>
-                        <MdKeyboardArrowUp size={"1.5rem"} />
-                      </button>
-                      <button>
-                        <MdKeyboardArrowDown size={"1.5rem"} />
-                      </button>
-                    </div>
+                    GUESTS
                   </div>
                 </th>
-                <th className="  ps-10 pe-5 py-2 text-white ">
+                <th className="  ps-10 pe-5 py-6 text-white ">
                   <div className=" tracking-widest text-sm text-start flex items-center justify-between">
-                    DATE
-                    <div className=" text-gray-300 flex flex-col">
-                      <button>
-                        <MdKeyboardArrowUp size={"1.5rem"} />
-                      </button>
-                      <button>
-                        <MdKeyboardArrowDown size={"1.5rem"} />
-                      </button>
-                    </div>
+                    BOOKING DATE
                   </div>
                 </th>
               </tr>

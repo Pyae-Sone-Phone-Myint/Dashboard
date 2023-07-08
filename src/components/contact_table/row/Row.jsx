@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import React, { useCallback, useEffect, useMemo, useState } from "react";
 import { increasePgn, pagination } from "../../../redux/services/ContactSlice";
 import { useMenu } from "@material-tailwind/react";
-import "./row.css"
+import "./row.css";
 import { BiDotsVerticalRounded } from "react-icons/bi";
 import { LuExpand, LuMinimize } from "react-icons/lu";
 import { AiFillEdit, AiOutlineReload } from "react-icons/ai";
@@ -36,26 +36,12 @@ const Row = () => {
       {show_data?.map((data) => {
         return (
           <tr
-            className=" border-b parents hover:bg-[#ECECEC] bg-white relative"
+            className=" border-b parents hover:bg-[#85ad6a31] bg-white relative"
             key={data.id}
           >
+            <td className="ps-10 py-2 text-sm ">{data.id}</td>
             <td className="ps-10 py-2 text-sm ">
               <div className=" flex gap- gap-4 items-center">
-                {data?.image !== "" ? (
-                  <div className=" bg-white p-1  rounded-full shadow-xl">
-                    <img
-                      src={`${data.image}`}
-                      className=" w-10 rounded-full"
-                      alt=""
-                    />
-                  </div>
-                ) : (
-                  <div className=" bg-white p-1  rounded-full shadow-xl">
-                    <div className=" w-10 h-10 text-center rounded-full bg-gray-300 flex items-center justify-center">
-                      {data.image_name}
-                    </div>
-                  </div>
-                )}
                 <div>
                   <div className=" font-bold">{data.name}</div>
                   <div className=" text-gray-400">{data.email}</div>
@@ -63,38 +49,20 @@ const Row = () => {
               </div>
             </td>
             <td className="ps-5 py-2">
-              <div className=" text-sm font-bold">{data.company_name}</div>
-              <div className=" text-sm text-gray-400">{data.company_type}</div>
+              <div className=" text-sm font-bold">{data.tour_name}</div>
+              <div className=" text-sm text-gray-400">{data.tour_type}</div>
             </td>
             <td className="ps-5 py-2">
-              <span
-                className={` px-2 py-[2px] rounded text-[11px]`}
-                style={{
-                  color: data.status_color,
-                  backgroundColor: data.status_bg_color,
-                }}
-              >
-                <div
-                  style={{ backgroundColor: data.status_color }}
-                  className={`w-2 h-2  inline-block rounded-full`}
-                ></div>
-                <span className=" ps-2 "> {data.status}</span>
-              </span>
+              <div className="text-sm text-yellow-800">{data.price}</div>
             </td>
-            <td className="ps-5 flex child py-2 my-[20px] justify-center items-center gap-3">
-              <div className=" text-sm">{data.contract}%</div>
-              <div className="flex-start progress flex h-1 w-full overflow-hidden bg-gray-100 rounded-sm font-sans text-xs font-medium">
-                <div
-                  className="flex h-full items-baseline justify-center overflow-hidden break-all bg-[#4650dd] text-white"
-                  style={{ width: data.contract + "%" }}
-                ></div>
-              </div>
+            <td className="ps-10 child py-2 my-[20px]  gap-3">
+              <div className=" text-sm">{data.guests}</div>
             </td>
             <td className=" ps-10 py-2">
               <div className=" relative flex items-center justify-between pe-5">
                 {" "}
                 <div className=" text-[14px]">{data.date}</div>
-                <button className="row_btn hover:bg-[#4752ea61] focus:bg-[#4752ea61] rounded-full p-1 text-gray-400 hover:text-[#4650dd] focus:text-[#4650dd] ">
+                <button className="row_btn hover:bg-[#81c0574e] focus:bg-[#81c05748] rounded-full p-1 text-gray-400 hover:text-[#81c057] focus:text-[#81c057] ">
                   <BiDotsVerticalRounded className="" size={"1.5rem"} />
                 </button>
                 <div
@@ -124,7 +92,7 @@ const Row = () => {
         );
       })}
       <tr>
-        <td className=" px-8 py-8 border" colSpan={5}>
+        <td className=" px-8 py-8 border" colSpan={6}>
           <div className=" w-full flex items-center justify-between">
             <div className=" text-sm">
               Showing {contact_start} to {contact_end} of {contact_qty} entries
@@ -152,7 +120,9 @@ const Row = () => {
                         pagination_handler(Number(e.target.innerText))
                       }
                       className={`  rounded-lg select-none shadow-md cursor-pointer px-3 py-1 ${
-                        num === paginate - 1 ? "bg-gray-300" : "bg-white"
+                        num === paginate - 1
+                          ? "bg-[#81c057e3] text-white"
+                          : "bg-white text-black"
                       }`}
                     >
                       {num + 1}
