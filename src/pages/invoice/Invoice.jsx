@@ -14,7 +14,7 @@ const Invoice = () => {
         <div className="page-breadcrumb mb-8  px-3">
           <p>
             {" "}
-            <span className=" text-[#4650dd] hover:underline duration-150">
+            <span className=" text-primary hover:underline duration-150">
             <Link to={'/'}>Home</Link>
             </span>{" "}
             <span className="muted"> / Invoice</span>{" "}

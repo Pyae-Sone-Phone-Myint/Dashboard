@@ -41,10 +41,7 @@ const Navbar = () => {
                 />
               </div>
               <div className="text-primary text-[.9rem] font-bold tracking-widest me-auto md:me-0 uppercase">
-                <h1>
-                  Bubbly{" "}
-                  <span className=" md:inline-block hidden">Dashboard</span>
-                </h1>
+               <img className="w-[150px]" src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/01/logo.png" alt="" />
               </div>
               <div className="flex items-center  gap-5">
                 {/* Search Box */}
@@ -399,7 +396,7 @@ const Navbar = () => {
               </Routes>
               <footer className=" bg-white py-7 px-10">
                 <h4 className=" text-[#343a40] text-sm font-bold leading-5 ">
-                  Your company © 2023
+                 GoWilds © 2023
                 </h4>
               </footer>
             </div>

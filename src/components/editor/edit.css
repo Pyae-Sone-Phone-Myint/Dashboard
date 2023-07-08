@@ -11,10 +11,10 @@
   border-radius: 0.25rem;
 }
 .media-btn {
-  color: #4650dd;
-  border: 1px solid #4650dd;
+  color: #64AB45;
+  border: 1px solid #64AB45;
 }
 .media-btn:hover {
-  background-color: #4650dd;
+  background-color: #64AB45;
   color: white;
 }
