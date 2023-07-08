@@ -18,17 +18,17 @@ const Knowledge = () => {
       <div className="">
         {/* Knowledge_base */}
         <div className="bg-[#F8F9FA]  px-3 lg:px-10 py-2 mb-20">
-        <div className="page-breadcrumb mb-8  px-3">
+          <div className="page-breadcrumb mb-8  px-3">
             <p>
               {" "}
               <span className=" text-[#4650dd] hover:underline duration-150">
-                <Link to={'/'}>Home</Link>
+                <Link to={"/"}>Home</Link>
               </span>{" "}
               <span className="muted"> / Knowledge Base</span>{" "}
             </p>
           </div>
           <div className=" mb-12 px-3">
-            <h1 className=" invoice-header">  KNOWLEDGE BASE</h1>
+            <h1 className=" invoice-header"> KNOWLEDGE BASE</h1>
           </div>
           {/* <div
             className="text-[35px] lg:text-[40px] tracking-[0.4rem] text-gray-700 mb-10"
@@ -51,70 +51,77 @@ const Knowledge = () => {
               id=""
               placeholder="Search Something..."
             />
-            <button className=" border border-[#4650dd] hover:text-white rounded-e-lg px-3 hover:bg-[#4752ea]">
+            <button className=" border border-[#4650dd] hover:text-white rounded-e-lg px-3 hover:bg-primary">
               <BiSearch size={"1.3rem"} />
             </button>
           </div>
           {/* cards */}
-         <Reveal>
-         <div className="w-full flex justify-between  gap-10 lg:gap-0 md:gap-8 flex-wrap mb-8">
-            <Link
-              to={"/notFound"}
-              className="w-[100%] md:w-[48%] select-none py-14 bg-white rounded-xl gap-3 lg:w-[24%] shadow cursor-pointer hover:-translate-y-2 ease-linear duration-100 flex flex-col items-center justify-center"
-            >
-              <div className=" w-[90px] h-[90px] rounded-full flex items-center justify-center bg-[#dadcf8]">
-                <HiOutlineDocumentSearch
-                  size={"2.4rem"}
-                  className=" text-[#4650dd]"
-                />
-              </div>
-              <h1 className=" font-bold text-gray-700">Help & Documentation</h1>
-              <p className=" text-center text-sm px-10 text-gray-500">
-                One morning, when Gregor Samsa woke from troubled dreams, he
-                found himself transformed in his bed in
-              </p>
-            </Link>
-            <Link
-              to={"/notFound"}
-              className="w-[100%] md:w-[48%] select-none py-14 bg-white rounded-xl gap-3 lg:w-[24%] shadow cursor-pointer hover:-translate-y-2 ease-linear duration-100 flex flex-col items-center justify-center"
-            >
-              <div className=" w-[90px] h-[90px] rounded-full flex items-center justify-center bg-[#f7d6e6]">
-                <LuLaptop2 size={"2.4rem"} className=" text-[#d63384]" />
-              </div>
-              <h1 className=" font-bold text-gray-700">Developer Resources</h1>
-              <p className=" text-center text-sm px-10 text-gray-500">
-                The bedding was hardly able to cover it and seemed ready to
-                slide off any moment. His many legs, pit
-              </p>
-            </Link>
-            <Link
-              to={"/notFound"}
-              className="w-[100%] md:w-[48%] select-none py-14 bg-white rounded-xl gap-3 lg:w-[24%] shadow cursor-pointer hover:-translate-y-2 ease-linear duration-100 flex flex-col items-center justify-center"
-            >
-              <div className=" w-[90px] h-[90px] rounded-full flex items-center justify-center bg-[#e0cffc]">
-                <AiOutlineMessage size={"2.4rem"} className=" text-[#6410f2]" />
-              </div>
-              <h1 className=" font-bold text-gray-700">Chat With Us</h1>
-              <p className=" text-center text-sm px-10 text-gray-500">
-                His room, a proper human room although a little too small, lay
-                peacefully between its four familiar
-              </p>
-            </Link>
-            <Link
-              to={"/notFound"}
-              className="w-[100%] md:w-[48%] select-none py-14 bg-white rounded-xl gap-3 lg:w-[24%] shadow cursor-pointer hover:-translate-y-2 ease-linear duration-100 flex flex-col items-center justify-center"
-            >
-              <div className=" w-[90px] h-[90px] rounded-full flex items-center justify-center bg-[#cfe2ff]">
-                <TbTargetArrow size={"2.4rem"} className=" text-[#0d6efd]" />
-              </div>
-              <h1 className=" font-bold text-gray-700">FAQ</h1>
-              <p className=" text-center text-sm px-10 text-gray-500">
-                Samsa was a travelling salesman - and above it there hung a
-                picture that he had recently cut out of
-              </p>
-            </Link>
-          </div>
-         </Reveal>
+          <Reveal>
+            <div className="w-full flex justify-between  gap-10 lg:gap-0 md:gap-8 flex-wrap mb-8">
+              <Link
+                to={"/notFound"}
+                className="w-[100%] md:w-[48%] select-none py-14 bg-white rounded-xl gap-3 lg:w-[24%] shadow cursor-pointer hover:-translate-y-2 ease-linear duration-100 flex flex-col items-center justify-center"
+              >
+                <div className=" w-[90px] h-[90px] rounded-full flex items-center justify-center bg-[#dadcf8]">
+                  <HiOutlineDocumentSearch
+                    size={"2.4rem"}
+                    className=" text-[#4650dd]"
+                  />
+                </div>
+                <h1 className=" font-bold text-gray-700">
+                  Help & Documentation
+                </h1>
+                <p className=" text-center text-sm px-10 text-gray-500">
+                  One morning, when Gregor Samsa woke from troubled dreams, he
+                  found himself transformed in his bed in
+                </p>
+              </Link>
+              <Link
+                to={"/notFound"}
+                className="w-[100%] md:w-[48%] select-none py-14 bg-white rounded-xl gap-3 lg:w-[24%] shadow cursor-pointer hover:-translate-y-2 ease-linear duration-100 flex flex-col items-center justify-center"
+              >
+                <div className=" w-[90px] h-[90px] rounded-full flex items-center justify-center bg-[#f7d6e6]">
+                  <LuLaptop2 size={"2.4rem"} className=" text-[#d63384]" />
+                </div>
+                <h1 className=" font-bold text-gray-700">
+                  Developer Resources
+                </h1>
+                <p className=" text-center text-sm px-10 text-gray-500">
+                  The bedding was hardly able to cover it and seemed ready to
+                  slide off any moment. His many legs, pit
+                </p>
+              </Link>
+              <Link
+                to={"/notFound"}
+                className="w-[100%] md:w-[48%] select-none py-14 bg-white rounded-xl gap-3 lg:w-[24%] shadow cursor-pointer hover:-translate-y-2 ease-linear duration-100 flex flex-col items-center justify-center"
+              >
+                <div className=" w-[90px] h-[90px] rounded-full flex items-center justify-center bg-[#e0cffc]">
+                  <AiOutlineMessage
+                    size={"2.4rem"}
+                    className=" text-[#6410f2]"
+                  />
+                </div>
+                <h1 className=" font-bold text-gray-700">Chat With Us</h1>
+                <p className=" text-center text-sm px-10 text-gray-500">
+                  His room, a proper human room although a little too small, lay
+                  peacefully between its four familiar
+                </p>
+              </Link>
+              <Link
+                to={"/notFound"}
+                className="w-[100%] md:w-[48%] select-none py-14 bg-white rounded-xl gap-3 lg:w-[24%] shadow cursor-pointer hover:-translate-y-2 ease-linear duration-100 flex flex-col items-center justify-center"
+              >
+                <div className=" w-[90px] h-[90px] rounded-full flex items-center justify-center bg-[#cfe2ff]">
+                  <TbTargetArrow size={"2.4rem"} className=" text-[#0d6efd]" />
+                </div>
+                <h1 className=" font-bold text-gray-700">FAQ</h1>
+                <p className=" text-center text-sm px-10 text-gray-500">
+                  Samsa was a travelling salesman - and above it there hung a
+                  picture that he had recently cut out of
+                </p>
+              </Link>
+            </div>
+          </Reveal>
         </div>
         {/* choose Topic */}
         <div className=" px-3 lg:px-20 mb-20">
@@ -142,7 +149,10 @@ const Knowledge = () => {
                 <span className="border bg-[#dadcf8] text-[#4650dd] px-2 py-1 rounded-md tex-sm">
                   12
                 </span>
-                <a to={"/notFound"} className=" text-lg font-bold text-[#343a40]">
+                <a
+                  to={"/notFound"}
+                  className=" text-lg font-bold text-[#343a40]"
+                >
                   Introduction
                 </a>
               </div>
@@ -159,7 +169,7 @@ const Knowledge = () => {
                   className=" flex items-center gap-2 ps-5 hover:underline text-gray-500"
                 >
                   <AiOutlineFile />
-                  Adipisicing voluptate magna quis <br/> sunt dolor velit.
+                  Adipisicing voluptate magna quis <br /> sunt dolor velit.
                 </a>
                 <a
                   href="/notFound"
@@ -182,7 +192,10 @@ const Knowledge = () => {
                 <span className="border bg-[#dadcf8] text-[#4650dd] px-2 py-1 rounded-md tex-sm">
                   12
                 </span>
-                <a to={"/notFound"} className=" text-lg font-bold text-[#343a40]">
+                <a
+                  to={"/notFound"}
+                  className=" text-lg font-bold text-[#343a40]"
+                >
                   Usage
                 </a>
               </div>
@@ -199,7 +212,7 @@ const Knowledge = () => {
                   className=" flex items-center gap-2 ps-5 hover:underline text-gray-500"
                 >
                   <AiOutlineFile />
-                  Adipisicing voluptate magna quis <br/> sunt dolor velit.
+                  Adipisicing voluptate magna quis <br /> sunt dolor velit.
                 </a>
                 <a
                   href="/notFound"
@@ -222,7 +235,10 @@ const Knowledge = () => {
                 <span className="border bg-[#dadcf8] text-[#4650dd] px-2 py-1 rounded-md tex-sm">
                   12
                 </span>
-                <a to={"/notFound"} className=" text-lg font-bold text-[#343a40]">
+                <a
+                  to={"/notFound"}
+                  className=" text-lg font-bold text-[#343a40]"
+                >
                   Renting
                 </a>
               </div>
@@ -239,7 +255,7 @@ const Knowledge = () => {
                   className=" flex items-center gap-2 ps-5 hover:underline text-gray-500"
                 >
                   <AiOutlineFile />
-                  Adipisicing voluptate magna quis <br/> sunt dolor velit.
+                  Adipisicing voluptate magna quis <br /> sunt dolor velit.
                 </a>
                 <a
                   href="/notFound"
@@ -262,7 +278,10 @@ const Knowledge = () => {
                 <span className="border bg-[#dadcf8] text-[#4650dd] px-2 py-1 rounded-md tex-sm">
                   12
                 </span>
-                <a to={"/notFound"} className=" text-lg font-bold text-[#343a40]">
+                <a
+                  to={"/notFound"}
+                  className=" text-lg font-bold text-[#343a40]"
+                >
                   Fee
                 </a>
               </div>
@@ -279,7 +298,7 @@ const Knowledge = () => {
                   className=" flex items-center gap-2 ps-5 hover:underline text-gray-500"
                 >
                   <AiOutlineFile />
-                  Adipisicing voluptate magna quis <br/> sunt dolor velit.
+                  Adipisicing voluptate magna quis <br /> sunt dolor velit.
                 </a>
                 <a
                   href="/notFound"
@@ -302,7 +321,10 @@ const Knowledge = () => {
                 <span className="border bg-[#dadcf8] text-[#4650dd] px-2 py-1 rounded-md tex-sm">
                   12
                 </span>
-                <a to={"/notFound"} className=" text-lg font-bold text-[#343a40]">
+                <a
+                  to={"/notFound"}
+                  className=" text-lg font-bold text-[#343a40]"
+                >
                   Other
                 </a>
               </div>
@@ -319,7 +341,7 @@ const Knowledge = () => {
                   className=" flex items-center gap-2 ps-5 hover:underline text-gray-500"
                 >
                   <AiOutlineFile />
-                  Adipisicing voluptate magna quis <br/> sunt dolor velit.
+                  Adipisicing voluptate magna quis <br /> sunt dolor velit.
                 </a>
                 <a
                   href="/notFound"
@@ -418,7 +440,6 @@ const Knowledge = () => {
             </div>
           </div>
         </div>
-       
       </div>
     </>
   );
