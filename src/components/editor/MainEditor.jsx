@@ -191,7 +191,7 @@ const MainEditor = () => {
         <div className="mb-2">
           <p className=" font-semibold text-xl">Tour Description:</p>
         </div>
-        <div className="">
+        {/* <div className="">
           <label htmlFor="exploreTours" className=" mb-2">
             Explore Tours
           </label>
@@ -231,9 +231,17 @@ const MainEditor = () => {
             rows={7}
             className="  form-control-textarea pt-3 w-full outline-none  mt-4 mb-6"
             placeholder=""
-          ></textarea>
-        </div>
+      
+        </div> */}
+        
         <div className="my-3">
+        <Editor />
+        </div>
+
+        <div className="my-3">
+        <div className="mb-2">
+            <p className=" font-semibold text-xl">Add Media :</p>
+          </div>
           <FilePond
             files={files}
             onupdatefiles={setFiles}
@@ -245,9 +253,7 @@ const MainEditor = () => {
             labelIdle='Drag & Drop your files or <span class="filepond--label-action">Browse</span>'
           />
         </div>
-        <div className="my-3">
-        <Editor />
-        </div>
+        
         <div className=" my-4">
           <button type="submit"  form="tourCreateForm" className=" text-lg btn media-btn mb-6">
             Create
